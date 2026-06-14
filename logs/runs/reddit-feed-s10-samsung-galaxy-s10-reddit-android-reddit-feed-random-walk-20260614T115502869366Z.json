@@ -1,0 +1,38 @@
+{
+  "app": {
+    "appActivity": "launcher.default",
+    "appPackage": "com.reddit.frontpage",
+    "app_label": "reddit_android",
+    "category": "social_media",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "udid": "RF8M903JTFR"
+  },
+  "dry_run": false,
+  "duration_sec": 180,
+  "environment": "lab",
+  "experiment_id": "reddit_feed_s10",
+  "mode": "collection",
+  "random_seed": 1101,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "reddit-feed-s10-samsung-galaxy-s10-reddit-android-reddit-feed-random-walk-20260614T115502869366Z",
+  "scenario": {
+    "allow_open_content": true,
+    "duration_sec": 180,
+    "flow": "feed_random_walk",
+    "name": "reddit_feed_random_walk",
+    "notes": "Reddit feed browsing with foreground package guard.",
+    "popup_check_every_iterations": 4,
+    "random_seed": 1101,
+    "stay_in_app": true
+  },
+  "started_at": "2026-06-14T11:55:02.869366+00:00",
+  "status": "running"
+}

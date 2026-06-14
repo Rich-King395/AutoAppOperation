@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appcollector"
+version = "0.1.0"
+description = "Mobile app interaction and RF collection experiment runner."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Appium-Python-Client>=5.3.1",
+  "PyYAML>=6.0.3",
+  "rich>=15.0.0",
+  "typer>=0.26.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.1.0",
+]
+
+[project.scripts]
+appcollector = "appcollector.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,36 @@
+experiments:
+  - experiment_id: smoke_android_feed
+    environment: lab
+    router: router_01
+    device: samsung_galaxy_S10
+    app: twitter_android
+    scenario: feed_random_walk
+    rounds: 1
+  - experiment_id: reddit_feed_s10
+    environment: lab
+    router: router_01
+    device: samsung_galaxy_S10
+    app: reddit_android
+    scenario: reddit_feed_random_walk
+    rounds: 1
+  - experiment_id: pinterest_feed_s10
+    environment: lab
+    router: router_01
+    device: samsung_galaxy_S10
+    app: pinterest_android
+    scenario: pinterest_feed_random_walk
+    rounds: 1
+  - experiment_id: instagram_feed_s10
+    environment: lab
+    router: router_01
+    device: samsung_galaxy_S10
+    app: instagram_android
+    scenario: instagram_feed_random_walk
+    rounds: 1
+  - experiment_id: facebook_feed_s10
+    environment: lab
+    router: router_01
+    device: samsung_galaxy_S10
+    app: facebook_android
+    scenario: facebook_feed_random_walk
+    rounds: 1

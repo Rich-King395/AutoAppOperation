@@ -1,0 +1,30 @@
+apps:
+  - app_label: twitter_android
+    platformName: Android
+    appPackage: com.twitter.android
+    appActivity: com.twitter.tweetdetail.TweetDetailActivity
+    category: social_media
+  - app_label: reddit_android
+    platformName: Android
+    appPackage: com.reddit.frontpage
+    appActivity: launcher.default
+    category: social_media
+  - app_label: pinterest_android
+    platformName: Android
+    appPackage: com.pinterest
+    appActivity: com.pinterest.activityLibrary.activity.task.activity.MainActivity
+    category: social_media
+  - app_label: instagram_android
+    platformName: Android
+    appPackage: com.instagram.android
+    appActivity: com.instagram.android.activity.MainTabActivity
+    category: social_media
+  - app_label: facebook_android
+    platformName: Android
+    appPackage: com.facebook.katana
+    appActivity: com.facebook.katana.LoginActivity
+    category: social_media
+    notes: "Current focus was LoginActivity; log in manually before meaningful feed collection."
+  - app_label: example_ios_app
+    platformName: iOS
+    bundleId: com.example.ios

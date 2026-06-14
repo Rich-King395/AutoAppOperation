@@ -1,0 +1,39 @@
+{
+  "app": {
+    "appActivity": "com.facebook.katana.LoginActivity",
+    "appPackage": "com.facebook.katana",
+    "app_label": "facebook_android",
+    "category": "social_media",
+    "notes": "Current focus was LoginActivity; log in manually before meaningful feed collection.",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "udid": "RF8M903JTFR"
+  },
+  "dry_run": true,
+  "duration_sec": 300,
+  "environment": "lab",
+  "experiment_id": "facebook_feed_s10",
+  "mode": "collection",
+  "random_seed": 1104,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "facebook-feed-s10-samsung-galaxy-s10-facebook-android-facebook-feed-random-walk-20260614T114842306323Z",
+  "scenario": {
+    "allow_open_content": true,
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "facebook_feed_random_walk",
+    "notes": "Facebook feed browsing with foreground package guard; requires manual login first.",
+    "popup_check_every_iterations": 4,
+    "random_seed": 1104,
+    "stay_in_app": true
+  },
+  "started_at": "2026-06-14T11:48:42.306323+00:00",
+  "status": "planned"
+}

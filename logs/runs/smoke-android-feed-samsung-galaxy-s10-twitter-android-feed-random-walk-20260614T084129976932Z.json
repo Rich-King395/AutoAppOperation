@@ -1,0 +1,34 @@
+{
+  "app": {
+    "appActivity": "com.twitter.tweetdetail.TweetDetailActivity",
+    "appPackage": "com.twitter.android",
+    "app_label": "twitter_android",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "udid": "RF8M903JTFR"
+  },
+  "dry_run": false,
+  "duration_sec": 300,
+  "environment": "lab",
+  "experiment_id": "smoke_android_feed",
+  "mode": "smoke",
+  "random_seed": 1001,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "smoke-android-feed-samsung-galaxy-s10-twitter-android-feed-random-walk-20260614T084129976932Z",
+  "scenario": {
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "feed_random_walk",
+    "random_seed": 1001
+  },
+  "smoke_wait_sec": 5,
+  "started_at": "2026-06-14T08:41:29.976932+00:00",
+  "status": "running"
+}

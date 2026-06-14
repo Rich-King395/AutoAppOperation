@@ -1,0 +1,38 @@
+{
+  "app": {
+    "appActivity": "com.pinterest.activityLibrary.activity.task.activity.MainActivity",
+    "appPackage": "com.pinterest",
+    "app_label": "pinterest_android",
+    "category": "social_media",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "udid": "RF8M903JTFR"
+  },
+  "dry_run": true,
+  "duration_sec": 300,
+  "environment": "lab",
+  "experiment_id": "pinterest_feed_s10",
+  "mode": "collection",
+  "random_seed": 1102,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "pinterest-feed-s10-samsung-galaxy-s10-pinterest-android-pinterest-feed-random-walk-20260614T114842303323Z",
+  "scenario": {
+    "allow_open_content": true,
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "pinterest_feed_random_walk",
+    "notes": "Pinterest feed browsing with foreground package guard.",
+    "popup_check_every_iterations": 4,
+    "random_seed": 1102,
+    "stay_in_app": true
+  },
+  "started_at": "2026-06-14T11:48:42.303323+00:00",
+  "status": "planned"
+}

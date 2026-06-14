@@ -1,0 +1,14 @@
+devices:
+  - name: samsung_galaxy_S10
+    platformName: Android
+    automationName: UiAutomator2
+    deviceName: samsung_galaxy_S10
+    udid: RF8M903JTFR
+    appiumServerUrl: http://127.0.0.1:4723
+  - name: ios_iphone_01
+    platformName: iOS
+    automationName: XCUITest
+    deviceName: ios_iphone_01
+    udid: auto
+    platformVersion: "17"
+    appiumServerUrl: http://127.0.0.1:4723

@@ -1,0 +1,34 @@
+{
+  "app": {
+    "appActivity": ".MainActivity",
+    "appPackage": "com.example.android",
+    "app_label": "example_android_app",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "platformVersion": "14",
+    "udid": "emulator-5554"
+  },
+  "dry_run": true,
+  "duration_sec": 300,
+  "environment": "lab",
+  "experiment_id": "smoke_android_feed",
+  "mode": "collection",
+  "random_seed": 1001,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "smoke-android-feed-samsung-galaxy-s10-example-android-app-feed-random-walk-20260614T081623506122Z",
+  "scenario": {
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "feed_random_walk",
+    "random_seed": 1001
+  },
+  "started_at": "2026-06-14T08:16:23.506122+00:00",
+  "status": "planned"
+}

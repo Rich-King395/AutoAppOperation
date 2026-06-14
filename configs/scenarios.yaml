@@ -1,0 +1,77 @@
+scenarios:
+  - name: feed_random_walk
+    flow: feed_random_walk
+    duration_sec: 300
+    random_seed: 1001
+    stay_in_app: true
+    allow_open_content: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 4
+    notes: "Social/feed browsing: wait, scroll, optionally open content with foreground package guard."
+  - name: reddit_feed_random_walk
+    flow: feed_random_walk
+    duration_sec: 180
+    random_seed: 1101
+    stay_in_app: true
+    allow_open_content: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 4
+    notes: "Reddit feed browsing with foreground package guard."
+  - name: pinterest_feed_random_walk
+    flow: feed_random_walk
+    duration_sec: 180
+    random_seed: 1102
+    stay_in_app: true
+    allow_open_content: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 4
+    notes: "Pinterest feed browsing with foreground package guard."
+  - name: instagram_feed_random_walk
+    flow: feed_random_walk
+    duration_sec: 180
+    random_seed: 1103
+    stay_in_app: true
+    allow_open_content: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 4
+    notes: "Instagram feed browsing with foreground package guard."
+  - name: facebook_feed_random_walk
+    flow: feed_random_walk
+    duration_sec: 180
+    random_seed: 1104
+    stay_in_app: true
+    allow_open_content: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 4
+    notes: "Facebook feed browsing with foreground package guard; requires manual login first."
+  - name: passive_media
+    flow: passive_media
+    duration_sec: 600
+    random_seed: 1002
+    stay_in_app: true
+    terminate_app_on_finish: true
+    notes: "Playback should be started manually before collection; script mostly waits."
+  - name: news_browse
+    flow: news_browse
+    duration_sec: 300
+    random_seed: 1003
+    stay_in_app: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 5
+    notes: "Browse home feed, occasionally open articles, scroll, return."
+  - name: shopping_browse
+    flow: shopping_browse
+    duration_sec: 300
+    random_seed: 1004
+    stay_in_app: true
+    terminate_app_on_finish: true
+    popup_check_every_iterations: 5
+    notes: "Browse listings/details only; no cart, favorite, purchase, or checkout."
+  - name: generic_random_walk
+    flow: generic_random_walk
+    duration_sec: 180
+    random_seed: 1005
+    stay_in_app: true
+    allow_back_navigation: false
+    terminate_app_on_finish: true
+    notes: "Safe fallback: wait and scroll only unless allow_back_navigation is enabled."

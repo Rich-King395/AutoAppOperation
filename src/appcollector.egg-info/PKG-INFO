@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: appcollector
+Version: 0.1.0
+Summary: Mobile app interaction and RF collection experiment runner.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: Appium-Python-Client>=5.3.1
+Requires-Dist: PyYAML>=6.0.3
+Requires-Dist: rich>=15.0.0
+Requires-Dist: typer>=0.26.7
+Provides-Extra: dev
+Requires-Dist: pytest>=9.1.0; extra == "dev"
+
+# AppCollector
+
+AppCollector is a Python + Appium framework skeleton for app-level mobile data collection experiments inspired by AppListener reproduction work. It does not implement activity-level behavior classification.
+
+## Install
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install -e .
+```
+
+## Start Appium
+
+Install Appium and the Android driver:
+
+```powershell
+npm install -g appium
+appium driver install uiautomator2
+appium
+```
+
+For iOS, install and configure the XCUITest driver on a macOS host.
+
+## Validate And Smoke Test
+
+These commands run in dry-run mode by default, so they do not require a phone or Appium server:
+
+```powershell
+appcollector validate-config
+appcollector smoke
+pytest
+```
+
+## Run One Collection
+
+Dry-run:
+
+```powershell
+appcollector run smoke_android_feed
+```
+
+Real Appium run:
+
+```powershell
+appcollector run smoke_android_feed --no-dry-run
+```
+
+Each run writes metadata to `logs/runs/<run_id>.json`.
+
+## Safety Scope
+
+Flows are limited to browsing-style app-level interactions such as passive waiting, safe taps, back navigation, and feed scrolling. The framework intentionally avoids sending messages, liking, commenting, purchasing, following, sharing, or bypassing verification screens. For real device operations, flows should prefer Appium element locators and use relative coordinates only as a fallback.

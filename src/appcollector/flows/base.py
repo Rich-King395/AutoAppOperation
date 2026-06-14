@@ -1,0 +1,55 @@
+from dataclasses import dataclass
+from time import monotonic, sleep
+from typing import Any
+
+from appcollector.common.app_state import ensure_app_foreground
+from appcollector.common.randomizer import SeededRandom
+
+
+@dataclass
+class Flow:
+    driver: Any
+    duration_sec: int
+    random_seed: int | str | None
+    logger: Any
+    scenario: dict[str, Any] | None = None
+    target_package: str | None = None
+
+    def __post_init__(self) -> None:
+        self.randomizer = SeededRandom(self.random_seed)
+
+    @property
+    def flow_name(self) -> str:
+        return self.__class__.__name__
+
+    def log_event(self, event: str, **fields: Any) -> None:
+        if hasattr(self.logger, "event"):
+            self.logger.event(event, flow=self.flow_name, **fields)
+
+    def run(self) -> None:
+        deadline = monotonic() + max(0, self.duration_sec)
+        iteration = 0
+        stay_in_app = bool((self.scenario or {}).get("stay_in_app", True))
+        self.log_event(
+            "flow_start",
+            duration_sec=self.duration_sec,
+            random_seed=self.random_seed,
+            stay_in_app=stay_in_app,
+        )
+        if stay_in_app:
+            ensure_app_foreground(self.driver, self.target_package)
+        while monotonic() < deadline:
+            iteration += 1
+            action = self.step(iteration)
+            if stay_in_app:
+                stayed = ensure_app_foreground(self.driver, self.target_package)
+                if not stayed:
+                    action = f"{action}:recovered_app_foreground"
+            self.log_event("loop_iteration", iteration=iteration, action=action)
+        self.log_event("flow_end", iterations=iteration)
+
+    def wait_random(self, min_sec: float, max_sec: float) -> None:
+        sleep(self.randomizer.uniform(min_sec, max_sec))
+
+    def step(self, iteration: int) -> str:
+        raise NotImplementedError

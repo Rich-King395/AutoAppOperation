@@ -1,0 +1,31 @@
+{
+  "app": {
+    "activity": ".MainActivity",
+    "app_label": "example_android_app",
+    "package": "com.example.android",
+    "platform": "android"
+  },
+  "device": {
+    "appium_server_url": "http://127.0.0.1:4723",
+    "name": "android_pixel_01",
+    "platform": "android",
+    "platform_version": "14",
+    "udid": "emulator-5554"
+  },
+  "dry_run": true,
+  "duration_sec": 300,
+  "environment": "lab",
+  "experiment_id": "smoke_android_feed",
+  "random_seed": 1001,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "smoke-android-feed-android-pixel-01-example-android-app-feed-random-walk-20260614T074405Z",
+  "scenario": {
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "feed_random_walk",
+    "random_seed": 1001
+  },
+  "started_at": "2026-06-14T07:44:05.541688+00:00",
+  "status": "planned"
+}

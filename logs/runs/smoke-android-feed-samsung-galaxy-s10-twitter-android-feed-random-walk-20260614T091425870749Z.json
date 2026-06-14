@@ -1,0 +1,444 @@
+{
+  "app": {
+    "appActivity": "com.twitter.tweetdetail.TweetDetailActivity",
+    "appPackage": "com.twitter.android",
+    "app_label": "twitter_android",
+    "platformName": "Android"
+  },
+  "device": {
+    "appiumServerUrl": "http://127.0.0.1:4723",
+    "automationName": "UiAutomator2",
+    "deviceName": "samsung_galaxy_S10",
+    "name": "samsung_galaxy_S10",
+    "platformName": "Android",
+    "udid": "RF8M903JTFR"
+  },
+  "dry_run": false,
+  "duration_sec": 300,
+  "environment": "lab",
+  "events": [
+    {
+      "at": "2026-06-14T09:14:50.905068+00:00",
+      "duration_sec": 300,
+      "event": "flow_start",
+      "flow": "FeedRandomWalk",
+      "random_seed": 1001
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:14:56.302843+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 1
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:14:58.811404+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 2
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:01.763609+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 3
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:05.068313+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 4
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:10.106648+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 5
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:12.901161+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 6
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:15.659708+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 7
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:18.472933+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 8
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:22.241056+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 9
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:15:25.246126+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 10
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:26.554129+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 11
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:29.750987+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 12
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:31.695026+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 13
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:33.620131+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 14
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:35.160129+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 15
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:38.407355+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 16
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:40.344122+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 17
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:43.104569+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 18
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:15:48.638781+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 19
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:15:51.049119+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 20
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:15:53.463722+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 21
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:15:55.329602+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 22
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:15:56.796962+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 23
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:16:03.472417+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 24
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:06.913140+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 25
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:16:08.999285+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 26
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:11.261724+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 27
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:13.478192+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 28
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:16:21.208725+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 29
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:16:23.877533+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 30
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:16:28.724666+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 31
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:31.319690+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 32
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:16:33.123618+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 33
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:34.943153+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 34
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:16:38.576521+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 35
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:41.819368+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 36
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:44.256265+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 37
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:46.152935+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 38
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:48.154282+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 39
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:50.064576+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 40
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:52.220447+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 41
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:16:55.442651+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 42
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:16:58.211433+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 43
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:16:59.789606+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 44
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:17:02.566050+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 45
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:17:07.823281+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 46
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:10.928036+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 47
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:17:14.912798+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 48
+    },
+    {
+      "action": "swipe_down",
+      "at": "2026-06-14T09:17:17.559073+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 49
+    },
+    {
+      "action": "wait",
+      "at": "2026-06-14T09:17:18.973796+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 50
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:21.697570+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 51
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:24.874465+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 52
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:28.300830+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 53
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:17:33.363806+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 54
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:36.112355+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 55
+    },
+    {
+      "action": "swipe_up",
+      "at": "2026-06-14T09:17:38.219759+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 56
+    },
+    {
+      "action": "open_and_back",
+      "at": "2026-06-14T09:17:42.827648+00:00",
+      "event": "loop_iteration",
+      "flow": "FeedRandomWalk",
+      "iteration": 57
+    }
+  ],
+  "experiment_id": "smoke_android_feed",
+  "finished_at": "2026-06-14T09:17:47.039865+00:00",
+  "mode": "collection",
+  "random_seed": 1001,
+  "rounds": 1,
+  "router": "router_01",
+  "run_id": "smoke-android-feed-samsung-galaxy-s10-twitter-android-feed-random-walk-20260614T091425870749Z",
+  "scenario": {
+    "duration_sec": 300,
+    "flow": "feed_random_walk",
+    "name": "feed_random_walk",
+    "notes": "Social/feed browsing only: wait, scroll, open middle content, return.",
+    "popup_check_every_iterations": 4,
+    "random_seed": 1001
+  },
+  "started_at": "2026-06-14T09:14:25.870749+00:00",
+  "status": "running"
+}
