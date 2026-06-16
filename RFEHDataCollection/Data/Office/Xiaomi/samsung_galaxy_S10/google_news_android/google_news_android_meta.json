@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\samsung_galaxy_S10/google_news_android",
+  "createdAt": "2026-06-16T17:39:27",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238047,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-google-news-android-rep-1-20260616T083453992206Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "google_news_android",
+    "appLabel": "google_news_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\samsung_galaxy_S10\\google_news_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\google_news_android\\google_news_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\google_news_android\\google_news_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T17:39:27",
+    "sampleCount": 238047,
+    "csvPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\google_news_android\\google_news_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\google_news_android\\google_news_android.png"
+  }
+}

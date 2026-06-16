@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\Xiaomi\\samsung_galaxy_S10/twitter_android",
+  "createdAt": "2026-06-15T18:00:46",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238040,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-twitter-android-rep-1-20260615T093925803142Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "twitter_android",
+    "appLabel": "twitter_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitter_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitter_android\\twitter_android.csv",
+    "plot": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitter_android\\twitter_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-15T18:00:46",
+    "sampleCount": 238040,
+    "csvPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitter_android\\twitter_android.csv",
+    "pngPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitter_android\\twitter_android.png"
+  }
+}

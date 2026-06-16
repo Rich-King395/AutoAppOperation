@@ -2,7 +2,7 @@ apps:
   - app_label: twitter_android
     platformName: Android
     appPackage: com.twitter.android
-    appActivity: com.twitter.tweetdetail.TweetDetailActivity
+    appActivity: .StartActivity
     category: social_media
   - app_label: reddit_android
     platformName: Android
@@ -25,6 +25,210 @@ apps:
     appActivity: com.facebook.katana.LoginActivity
     category: social_media
     notes: "Current focus was LoginActivity; log in manually before meaningful feed collection."
+  - app_label: bbc_news_android
+    app_name: BBC
+    platformName: Android
+    appPackage: bbc.mobile.news.ww
+    appActivity: com.mobile.MainActivity
+    category: news
+  - app_label: cnn_android
+    app_name: CNN
+    platformName: Android
+    appPackage: com.cnn.mobile.android.phone
+    appActivity: .features.splash.SplashActivity
+    category: news
+  - app_label: google_news_android
+    app_name: GoogleNews
+    platformName: Android
+    appPackage: com.google.android.apps.magazines
+    appActivity: com.google.apps.dots.android.app.activity.CurrentsStartActivity
+    category: news
+  - app_label: wikipedia_android
+    app_name: Wikipedia
+    platformName: Android
+    appPackage: org.wikipedia
+    appActivity: .DefaultIcon
+    category: news
+  - app_label: flipboard_android
+    app_name: Flipboard
+    platformName: Android
+    appPackage: flipboard.app
+    appActivity: flipboard.activities.LaunchActivityAlias
+    category: news
+  - app_label: ebay_android
+    app_name: eBay
+    platformName: Android
+    appPackage: com.ebay.mobile
+    appActivity: .home.impl.main.MainActivity
+    category: shopping
+  - app_label: amazon_shopping_android
+    app_name: AmazonShopping
+    platformName: Android
+    appPackage: com.amazon.mShop.android.shopping
+    appActivity: com.amazon.mShop.home.HomeActivity
+    category: shopping
+  - app_label: aliexpress_android
+    app_name: AliExpress
+    platformName: Android
+    appPackage: com.alibaba.aliexpresshd
+    appActivity: com.aliexpress.app.FirstActivity
+    category: shopping
+  - app_label: temu_android
+    app_name: Temu
+    platformName: Android
+    appPackage: com.einnovation.temu
+    appActivity: com.baogong.splash.activity.MainFrameActivity
+    category: shopping
+  - app_label: shein_android
+    app_name: SHEIN
+    platformName: Android
+    appPackage: com.zzkko
+    appActivity: com.shein.welcome.WelcomeActivity
+    category: shopping
+  - app_label: bilibili_android
+    app_name: bilibili
+    platformName: Android
+    appPackage: tv.danmaku.bili
+    appActivity: .MainActivityV2
+    category: video
+  - app_label: youtube_android
+    app_name: YouTube
+    platformName: Android
+    appPackage: com.google.android.youtube
+    appActivity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+    category: video
+  - app_label: tiktok_android
+    app_name: Tiktok
+    platformName: Android
+    appPackage: com.ss.android.ugc.aweme.mobile
+    appActivity: com.ss.android.ugc.aweme.splash.SplashActivity
+    category: video
+  - app_label: vimeo_android
+    app_name: Vimeo
+    platformName: Android
+    appPackage: com.vimeo.android.videoapp
+    appActivity: .launch.LaunchActivity
+    category: video
+  - app_label: twitch_android
+    app_name: Twitch
+    platformName: Android
+    appPackage: tv.twitch.android.app
+    appActivity: .core.LandingActivity
+    category: video
+  - app_label: youku_android
+    app_name: Youku
+    platformName: Android
+    appPackage: com.youku.international.phone
+    appActivity: com.youku.v2.HomePageEntry
+    category: video
+  - app_label: huya_android
+    app_name: Huya
+    platformName: Android
+    appPackage: com.huya.kiwi
+    appActivity: com.duowan.kiwi.homepage.Homepage
+    category: video
+  - app_label: netease_music_android
+    app_name: NetEase
+    platformName: Android
+    appPackage: com.netease.cloudmusic
+    appActivity: .activity.IconChangeDefaultAlias
+    category: music
+  - app_label: spotify_android
+    app_name: Spotify
+    platformName: Android
+    appPackage: com.spotify.music
+    appActivity: .MainActivity
+    category: music
+  - app_label: youtube_music_android
+    app_name: YoutubeMusic
+    platformName: Android
+    appPackage: com.google.android.apps.youtube.music
+    appActivity: .activities.MusicActivity
+    category: music
+  - app_label: joox_android
+    app_name: JOOX
+    platformName: Android
+    appPackage: com.tencent.ibg.joox
+    appActivity: com.tencent.wemusic.ui.main.launchIcon.AliasDefaultLauncherUI
+    category: music
+  - app_label: qq_music_android
+    app_name: QQMusic
+    platformName: Android
+    appPackage: com.tencent.qqmusic
+    appActivity: .activity.AppStarterActivity
+    category: music
+  - app_label: apple_music_android
+    app_name: AppleMusic
+    platformName: Android
+    appPackage: com.apple.android.music
+    appActivity: com.apple.android.music.common.MainContentActivity
+    category: music
+  - app_label: anghami_android
+    app_name: Anghami
+    platformName: Android
+    appPackage: com.anghami
+    appActivity: com.anghami.activities.SplashActivity_
+    category: music
+  - app_label: kugou_music_android
+    app_name: KugouMusic
+    platformName: Android
+    appPackage: com.kugou.android
+    appActivity: com.kugou.android.app.splash.SplashActivity
+    category: music
+  - app_label: rednote_android
+    app_name: Rednote
+    platformName: Android
+    appPackage: com.xingin.xhs
+    appActivity: com.xingin.xhs.index.v2.IndexActivityV2
+    category: social_media
+  - app_label: threads_android
+    app_name: Threads
+    platformName: Android
+    appPackage: com.instagram.barcelona
+    appActivity: com.instagram.barcelona.mainactivity.BarcelonaActivity
+    category: social_media
+  - app_label: bluesky_android
+    app_name: Bluesky
+    platformName: Android
+    appPackage: xyz.blueskyweb.app
+    appActivity: xyz.blueskyweb.app.MainActivity
+    category: social_media
+  - app_label: lazada_android
+    app_name: Lazada
+    platformName: Android
+    appPackage: com.lazada.android
+    appActivity: com.lazada.activities.EnterActivity
+    category: shopping
+  - app_label: zalora_android
+    app_name: ZALORA
+    platformName: Android
+    appPackage: com.zalora.android
+    appActivity: com.zalora.main.activity.MainFragmentActivity
+    category: shopping
+  - app_label: taobao_android
+    app_name: Taobao
+    platformName: Android
+    appPackage: com.taobao.taobao
+    appActivity: com.taobao.tao.welcome.Welcome
+    category: shopping
+  - app_label: ground_news_android
+    app_name: GroundNews
+    platformName: Android
+    appPackage: com.checkitt
+    appActivity: vc.ucic.uciccore.MainNavigationActivity
+    category: news
+  - app_label: scmp_android
+    app_name: SCMP
+    platformName: Android
+    appPackage: com.scmp.newspulse
+    appActivity: com.scmp.scmpapp.home.view.activity.HomeActivity
+    category: news
+  - app_label: dailyhunt_android
+    app_name: DailyHunt
+    platformName: Android
+    appPackage: com.eterno
+    appActivity: com.newshunt.appview.common.ui.activity.HomeActivity
+    category: news
   - app_label: example_ios_app
     platformName: iOS
     bundleId: com.example.ios

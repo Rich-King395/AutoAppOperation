@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\Xiaomi\\samsung_galaxy_S10/twitch_android",
+  "createdAt": "2026-06-16T14:39:19",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238042,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-twitch-android-rep-1-20260616T053452445079Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "twitch_android",
+    "appLabel": "twitch_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitch_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitch_android\\twitch_android.csv",
+    "plot": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitch_android\\twitch_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T14:39:19",
+    "sampleCount": 238042,
+    "csvPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitch_android\\twitch_android.csv",
+    "pngPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\twitch_android\\twitch_android.png"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\Xiaomi\\samsung_galaxy_S10/reddit_android",
+  "createdAt": "2026-06-15T18:22:07",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238046,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-reddit-android-rep-1-20260615T093925803143Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "reddit_android",
+    "appLabel": "reddit_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\Xiaomi\\samsung_galaxy_S10\\reddit_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\reddit_android\\reddit_android.csv",
+    "plot": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\reddit_android\\reddit_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-15T18:22:07",
+    "sampleCount": 238046,
+    "csvPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\reddit_android\\reddit_android.csv",
+    "pngPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\reddit_android\\reddit_android.png"
+  }
+}

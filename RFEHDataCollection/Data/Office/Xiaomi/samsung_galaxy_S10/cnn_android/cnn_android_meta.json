@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\samsung_galaxy_S10/cnn_android",
+  "createdAt": "2026-06-16T17:17:54",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238050,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-cnn-android-rep-1-20260616T083453992205Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "cnn_android",
+    "appLabel": "cnn_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\samsung_galaxy_S10\\cnn_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\cnn_android\\cnn_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\cnn_android\\cnn_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T17:17:54",
+    "sampleCount": 238050,
+    "csvPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\cnn_android\\cnn_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\cnn_android\\cnn_android.png"
+  }
+}

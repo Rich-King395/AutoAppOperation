@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\Xiaomi\\samsung_galaxy_S10/bilibili_android",
+  "createdAt": "2026-06-16T13:21:36",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238038,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-bilibili-android-rep-1-20260616T050017830611Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "bilibili_android",
+    "appLabel": "bilibili_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\Xiaomi\\samsung_galaxy_S10\\bilibili_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\bilibili_android\\bilibili_android.csv",
+    "plot": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\bilibili_android\\bilibili_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T13:21:36",
+    "sampleCount": 238038,
+    "csvPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\bilibili_android\\bilibili_android.csv",
+    "pngPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\bilibili_android\\bilibili_android.png"
+  }
+}

@@ -34,3 +34,241 @@ experiments:
     app: facebook_android
     scenario: facebook_feed_random_walk
     rounds: 1
+  - experiment_id: bbc_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: bbc_news_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: cnn_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: cnn_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: google_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: google_news_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: wikipedia_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: wikipedia_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: flipboard_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: flipboard_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: ebay_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: ebay_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: amazon_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: amazon_shopping_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: aliexpress_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: aliexpress_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: temu_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: temu_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: shein_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: shein_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: bilibili_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: bilibili_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: youtube_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: youtube_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: tiktok_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: tiktok_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: vimeo_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: vimeo_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: twitch_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: twitch_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: netease_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: netease_music_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: spotify_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: spotify_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: youtube_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: youtube_music_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: joox_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: joox_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: qq_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: qq_music_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: youku_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: youku_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: huya_video_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: huya_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: apple_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: apple_music_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: anghami_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: anghami_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: kugou_music_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: kugou_music_android
+    scenario: passive_media
+    rounds: 1
+  - experiment_id: rednote_feed_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: rednote_android
+    scenario: feed_random_walk
+    rounds: 1
+  - experiment_id: threads_feed_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: threads_android
+    scenario: feed_random_walk
+    rounds: 1
+  - experiment_id: bluesky_feed_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: bluesky_android
+    scenario: feed_random_walk
+    rounds: 1
+  - experiment_id: lazada_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: lazada_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: zalora_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: zalora_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: taobao_shopping_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: taobao_android
+    scenario: shopping_browse
+    rounds: 1
+  - experiment_id: ground_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: ground_news_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: scmp_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: scmp_android
+    scenario: news_browse
+    rounds: 1
+  - experiment_id: dailyhunt_news_s10
+    environment: lab
+    router: FAST
+    device: samsung_galaxy_S10
+    app: dailyhunt_android
+    scenario: news_browse
+    rounds: 1

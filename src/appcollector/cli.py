@@ -6,6 +6,7 @@ from rich import print
 from appcollector.config import load_configs
 from appcollector.errors import AppCollectorError
 from appcollector.experiment import ExperimentRun
+from appcollector.integration.experiment_orchestrator import ExperimentOrchestrator
 
 app = typer.Typer(help="Run AppCollector experiments.")
 
@@ -61,11 +62,23 @@ def run(
 
 @app.command("run-matrix")
 def run_matrix(
+    config: Path | None = typer.Option(None, "--config", help="YAML/JSON top-level experiment config."),
     config_dir: Path = typer.Option(Path("configs"), help="Config directory."),
-    dry_run: bool = typer.Option(True, "--dry-run/--no-dry-run", help="Run without connecting to Appium."),
+    dry_run: bool = typer.Option(False, "--dry-run/--no-dry-run", help="Run without connecting to Appium or RF hardware."),
+    continue_on_error: bool = typer.Option(False, "--continue-on-error", help="Continue matrix after a failed run."),
 ) -> None:
     """Run all experiments in experiment_matrix.yaml."""
     try:
+        if config is not None:
+            orchestrator = ExperimentOrchestrator.from_config_file(config)
+            result = orchestrator.dry_run_plan() if dry_run else {
+                "mode": "execution",
+                "continue_on_error": continue_on_error,
+                "runs": orchestrator.run_matrix(continue_on_error=continue_on_error),
+            }
+            print(result)
+            return
+
         configs = load_configs(config_dir)
         results = []
         for row in configs["experiment_matrix"]["experiments"]:

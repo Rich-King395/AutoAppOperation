@@ -1,0 +1,29 @@
+experiment_id: Office
+device_id: samsung_galaxy_S10
+hardware_id: arduino_vcap_com3
+environment_id: office
+router_id: Xiaomi
+apps:
+  # - bbc_news_android
+  # - cnn_android
+  # - google_news_android
+  # - wikipedia_android
+  # - flipboard_android
+  - rednote_android
+  - threads_android
+  - bluesky_android
+  - lazada_android
+  - zalora_android
+  - taobao_android
+  - ground_news_android
+  - scmp_android
+  - dailyhunt_android
+app_warmup_sec: 60
+duration_sec: 1200
+repetitions: 1
+output_root: data/raw/Office
+rf_collector:
+  base_url: http://127.0.0.1:8000
+  smooth: true
+  show_raw: true
+  smooth_window: 11

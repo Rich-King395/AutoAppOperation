@@ -29,6 +29,7 @@ class Flow:
     def run(self) -> None:
         deadline = monotonic() + max(0, self.duration_sec)
         iteration = 0
+        consecutive_errors = 0
         stay_in_app = bool((self.scenario or {}).get("stay_in_app", True))
         self.log_event(
             "flow_start",
@@ -37,10 +38,33 @@ class Flow:
             stay_in_app=stay_in_app,
         )
         if stay_in_app:
-            ensure_app_foreground(self.driver, self.target_package)
+            recovered = ensure_app_foreground(self.driver, self.target_package)
+            if not recovered:
+                self.log_event("app_foreground_recovery", phase="flow_start")
         while monotonic() < deadline:
             iteration += 1
-            action = self.step(iteration)
+            try:
+                action = self.step(iteration)
+                consecutive_errors = 0
+            except Exception as exc:
+                consecutive_errors += 1
+                action = f"step_error:{exc.__class__.__name__}"
+                self.log_event(
+                    "flow_step_error",
+                    iteration=iteration,
+                    error=str(exc),
+                    consecutive_errors=consecutive_errors,
+                )
+                if stay_in_app:
+                    recovered = ensure_app_foreground(self.driver, self.target_package)
+                    if not recovered:
+                        action = f"{action}:recovery_failed"
+                remaining = deadline - monotonic()
+                if remaining <= 0:
+                    break
+                sleep(min(3.0, remaining))
+                self.log_event("loop_iteration", iteration=iteration, action=action)
+                continue
             if stay_in_app:
                 stayed = ensure_app_foreground(self.driver, self.target_package)
                 if not stayed:

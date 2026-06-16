@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\samsung_galaxy_S10/qq_music_android",
+  "createdAt": "2026-06-16T16:32:16",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238044,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-qq-music-android-rep-1-20260616T070636530257Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "qq_music_android",
+    "appLabel": "qq_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\samsung_galaxy_S10\\qq_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\qq_music_android\\qq_music_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\qq_music_android\\qq_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T16:32:16",
+    "sampleCount": 238044,
+    "csvPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\qq_music_android\\qq_music_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\qq_music_android\\qq_music_android.png"
+  }
+}

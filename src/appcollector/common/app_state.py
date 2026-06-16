@@ -16,13 +16,19 @@ def ensure_app_foreground(driver: Any, app_package: str | None) -> bool:
     package = current_package(driver)
     if package == app_package:
         return True
-    driver.activate_app(app_package)
+    try:
+        driver.activate_app(app_package)
+    except Exception:
+        return False
     sleep(0.8)
     return False
 
 
 def guarded_back(driver: Any, app_package: str | None) -> bool:
-    driver.back()
+    try:
+        driver.back()
+    except Exception:
+        return ensure_app_foreground(driver, app_package)
     sleep(0.8)
     return ensure_app_foreground(driver, app_package)
 

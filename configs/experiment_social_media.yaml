@@ -1,0 +1,23 @@
+experiment_id: Collected
+device_id: samsung_galaxy_S10
+hardware_id: arduino_vcap_com3
+environment_id: office
+router_id: Xiaomi
+apps:
+  - twitter_android
+  - reddit_android
+  - pinterest_android
+  - instagram_android
+  - facebook_android
+  - rednote_android
+  - threads_android
+  - bluesky_android
+app_warmup_sec: 60
+duration_sec: 1200
+repetitions: 1
+output_root: data/raw/Collected
+rf_collector:
+  base_url: http://127.0.0.1:8000
+  smooth: true
+  show_raw: true
+  smooth_window: 11

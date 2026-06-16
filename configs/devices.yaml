@@ -4,6 +4,7 @@ devices:
     automationName: UiAutomator2
     deviceName: samsung_galaxy_S10
     udid: RF8M903JTFR
+    adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
     appiumServerUrl: http://127.0.0.1:4723
   - name: ios_iphone_01
     platformName: iOS

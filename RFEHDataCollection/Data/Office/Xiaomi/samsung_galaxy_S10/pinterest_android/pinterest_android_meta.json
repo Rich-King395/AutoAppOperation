@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\Xiaomi\\samsung_galaxy_S10/pinterest_android",
+  "createdAt": "2026-06-15T18:43:29",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238047,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-pinterest-android-rep-1-20260615T093925803144Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "pinterest_android",
+    "appLabel": "pinterest_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\Xiaomi\\samsung_galaxy_S10\\pinterest_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\pinterest_android\\pinterest_android.csv",
+    "plot": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\pinterest_android\\pinterest_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-15T18:43:29",
+    "sampleCount": 238047,
+    "csvPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\pinterest_android\\pinterest_android.csv",
+    "pngPath": "Data\\Collected\\Xiaomi\\samsung_galaxy_S10\\pinterest_android\\pinterest_android.png"
+  }
+}

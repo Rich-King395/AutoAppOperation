@@ -1,4 +1,4 @@
-from appcollector.common.app_state import guarded_open_and_back
+from appcollector.common.app_state import ensure_app_foreground, guarded_open_and_back
 
 
 class FakeDriver:
@@ -55,3 +55,16 @@ def test_guarded_open_and_back_recovers_when_back_exits_target_app() -> None:
     assert driver.current_package == "com.twitter.android"
     assert driver.activated == ["com.twitter.android"]
     assert driver.back_calls == 1
+
+
+def test_ensure_app_foreground_returns_false_when_activation_fails() -> None:
+    class ActivationFailsDriver(FakeDriver):
+        def activate_app(self, package: str) -> None:
+            self.activated.append(package)
+            raise RuntimeError("activation failed")
+
+    driver = ActivationFailsDriver()
+    driver.current_package = "com.android.chrome"
+
+    assert ensure_app_foreground(driver, "com.twitter.android") is False
+    assert driver.current_package == "com.android.chrome"

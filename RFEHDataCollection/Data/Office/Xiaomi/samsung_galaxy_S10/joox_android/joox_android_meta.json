@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\samsung_galaxy_S10/joox_android",
+  "createdAt": "2026-06-16T16:10:42",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238044,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-joox-android-rep-1-20260616T070636530256Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "joox_android",
+    "appLabel": "joox_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\samsung_galaxy_S10\\joox_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\joox_android\\joox_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\joox_android\\joox_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-16T16:10:42",
+    "sampleCount": 238044,
+    "csvPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\joox_android\\joox_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\samsung_galaxy_S10\\joox_android\\joox_android.png"
+  }
+}
