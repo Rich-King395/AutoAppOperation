@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/kugou_music_android",
+  "createdAt": "2026-06-18T21:01:52",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238051,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-kugou-music-android-rep-1-20260618T105216893391Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "kugou_music_android",
+    "appLabel": "kugou_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\kugou_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-18T21:01:52",
+    "sampleCount": 238051,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.png"
+  }
+}

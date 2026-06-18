@@ -34,9 +34,10 @@ apps:
   # - apple_music_android
   # - anghami_android
   # - kugou_music_android
-  - bbc_news_android
-  - cnn_android
-  - google_news_android
+  # - bbc_news_android
+  # - cnn_android
+  # - google_news_android
+
   - wikipedia_android
   - flipboard_android
   - ground_news_android
