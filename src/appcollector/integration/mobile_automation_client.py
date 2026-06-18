@@ -88,7 +88,7 @@ class MobileAutomationClient:
         if app_id != self.app_config.get("app_label"):
             raise ConfigError(f"Run app_id '{app_id}' does not match resolved app config.")
         self.driver = create_driver(self.device, self.app_config)
-        activate_android_app(self.driver, self.app_config)
+        activate_android_app(self.driver, self.app_config, self.device)
 
     def run_app_flow(self, app_id: str, duration_sec: int, run_context: dict[str, Any] | None = None) -> dict[str, Any]:
         """Run the existing app-level flow for the configured duration."""

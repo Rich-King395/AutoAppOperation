@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/facebook_android",
+  "createdAt": "2026-06-17T22:22:52",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238041,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-facebook-android-rep-1-20260617T125653360526Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "facebook_android",
+    "appLabel": "facebook_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\facebook_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\facebook_android\\facebook_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\facebook_android\\facebook_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-17T22:22:52",
+    "sampleCount": 238041,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\facebook_android\\facebook_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\facebook_android\\facebook_android.png"
+  }
+}

@@ -2,15 +2,17 @@ experiment_id: Office
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
 environment_id: office
-router_id: Xiaomi
+router_id: TP-Link
 apps:
   - spotify_android
-  - youtube_music_android
   - joox_android
   - qq_music_android
+  - youtube_music_android
+  - netease_music_android
   - apple_music_android
   - anghami_android
   - kugou_music_android
+
 app_warmup_sec: 60
 duration_sec: 1200
 repetitions: 1

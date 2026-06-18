@@ -1,3 +1,7 @@
+import os
+import shutil
+import subprocess
+from pathlib import Path
 from typing import Any
 
 from appcollector.config import get_config_value
@@ -19,6 +23,7 @@ def build_android_options(device: dict[str, Any], app_config: dict[str, Any]):
     platform_version = get_config_value(device, "platformVersion", "platform_version", required=False)
     app_package = get_config_value(app_config, "appPackage", "package")
     app_activity = get_config_value(app_config, "appActivity", "activity", required=False)
+    launch_strategy = str(app_config.get("launchStrategy") or app_config.get("launch_strategy") or "").lower()
 
     options = UiAutomator2Options()
     options.platform_name = str(platform_name)
@@ -27,9 +32,12 @@ def build_android_options(device: dict[str, Any], app_config: dict[str, Any]):
     options.device_name = str(device_name)
     if platform_version:
         options.platform_version = str(platform_version)
-    options.app_package = str(app_package)
-    if app_activity:
+    if launch_strategy != "monkey":
+        options.app_package = str(app_package)
+    if app_activity and launch_strategy != "monkey":
         options.app_activity = str(app_activity)
+    if launch_strategy == "monkey":
+        options.set_capability("autoLaunch", False)
     options.no_reset = True
     options.uiautomator2_server_launch_timeout = 120000
     options.uiautomator2_server_install_timeout = 120000
@@ -70,9 +78,70 @@ def create_android_driver(device: dict[str, Any], app_config: dict[str, Any]):
         raise DriverError(f"Could not create Android UiAutomator2 driver: {message}") from exc
 
 
-def activate_android_app(driver: Any, app_config: dict[str, Any]) -> None:
+def activate_android_app(driver: Any, app_config: dict[str, Any], device: dict[str, Any] | None = None) -> None:
     app_package = get_config_value(app_config, "appPackage", "package")
+    launch_strategy = str(app_config.get("launchStrategy") or app_config.get("launch_strategy") or "").lower()
+    if launch_strategy == "monkey":
+        _launch_with_monkey(driver, str(app_package), device)
+        return
     try:
         driver.activate_app(str(app_package))
     except Exception as exc:
         raise DriverError(f"Driver connected, but failed to activate appPackage '{app_package}': {exc}") from exc
+
+
+def _launch_with_monkey(driver: Any, app_package: str, device: dict[str, Any] | None = None) -> None:
+    args = ["-p", app_package, "-c", "android.intent.category.LAUNCHER", "1"]
+    try:
+        driver.execute_script("mobile: shell", {"command": "monkey", "args": args})
+        return
+    except Exception as appium_exc:
+        if _launch_with_adb_monkey(app_package, device):
+            return
+        raise DriverError(
+            f"Driver connected, but failed to launch appPackage '{app_package}' with monkey: {appium_exc}"
+        ) from appium_exc
+
+
+def _launch_with_adb_monkey(app_package: str, device: dict[str, Any] | None = None) -> bool:
+    adb = _adb_executable(device)
+    udid = str((device or {}).get("udid", "")).strip()
+    if not adb or not udid:
+        return False
+    try:
+        subprocess.run(
+            [adb, "-s", udid, "shell", "monkey", "-p", app_package, "-c", "android.intent.category.LAUNCHER", "1"],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=15,
+        )
+        return True
+    except Exception:
+        return False
+
+
+def _adb_executable(device: dict[str, Any] | None = None) -> str | None:
+    for key in ("adbPath", "adb_path"):
+        configured = str((device or {}).get(key, "")).strip()
+        if configured:
+            return configured
+
+    adb_name = "adb.exe" if os.name == "nt" else "adb"
+    for env_name in ("ANDROID_HOME", "ANDROID_SDK_ROOT"):
+        sdk_root = os.environ.get(env_name)
+        if not sdk_root:
+            continue
+        candidate = Path(sdk_root) / "platform-tools" / adb_name
+        if candidate.exists():
+            return str(candidate)
+
+    found = shutil.which("adb")
+    if found:
+        return found
+
+    windows_default = Path("D:/Android/Sdk/platform-tools/adb.exe")
+    if windows_default.exists():
+        return str(windows_default)
+    return None

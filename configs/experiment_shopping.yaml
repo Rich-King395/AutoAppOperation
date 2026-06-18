@@ -2,7 +2,7 @@ experiment_id: Collected
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
 environment_id: office
-router_id: Xiaomi
+router_id: TP-Link
 apps:
   - ebay_android
   - amazon_shopping_android

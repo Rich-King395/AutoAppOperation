@@ -109,7 +109,7 @@ class ExperimentRun:
 
         driver = create_driver(self.device, self.app_config)
         try:
-            activate_android_app(driver, self.app_config)
+            activate_android_app(driver, self.app_config, self.device)
             sleep(wait_sec)
             metadata["status"] = "completed"
         except Exception:
@@ -144,7 +144,7 @@ class ExperimentRun:
         rf_sync.start(run_id)
         run_error: Exception | None = None
         try:
-            activate_android_app(driver, self.app_config)
+            activate_android_app(driver, self.app_config, self.device)
             flow_cls = FLOW_REGISTRY[str(self.scenario["flow"])]
             flow = flow_cls(
                 driver=driver,

@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/taobao_android",
+  "createdAt": "2026-06-18T14:37:27",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238037,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-taobao-android-rep-1-20260618T061549735434Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "taobao_android",
+    "appLabel": "taobao_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\taobao_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\taobao_android\\taobao_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\taobao_android\\taobao_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-18T14:37:27",
+    "sampleCount": 238037,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\taobao_android\\taobao_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\taobao_android\\taobao_android.png"
+  }
+}

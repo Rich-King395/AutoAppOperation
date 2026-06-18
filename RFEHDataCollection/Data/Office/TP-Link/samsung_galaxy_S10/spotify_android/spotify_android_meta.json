@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/spotify_android",
+  "createdAt": "2026-06-18T17:28:50",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238039,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-spotify-android-rep-1-20260618T061549735442Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "spotify_android",
+    "appLabel": "spotify_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\spotify_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\spotify_android\\spotify_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\spotify_android\\spotify_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-18T17:28:50",
+    "sampleCount": 238039,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\spotify_android\\spotify_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\spotify_android\\spotify_android.png"
+  }
+}

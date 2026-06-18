@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/threads_android",
+  "createdAt": "2026-06-18T11:17:10",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238036,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-threads-android-rep-1-20260618T023421672519Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "threads_android",
+    "appLabel": "threads_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\threads_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\threads_android\\threads_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\threads_android\\threads_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-18T11:17:10",
+    "sampleCount": 238036,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\threads_android\\threads_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\threads_android\\threads_android.png"
+  }
+}

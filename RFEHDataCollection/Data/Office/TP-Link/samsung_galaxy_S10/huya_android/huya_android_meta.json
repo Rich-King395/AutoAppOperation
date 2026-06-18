@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/huya_android",
+  "createdAt": "2026-06-18T17:07:26",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238044,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-huya-android-rep-1-20260618T061549735441Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "huya_android",
+    "appLabel": "huya_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\huya_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\huya_android\\huya_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\huya_android\\huya_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-18T17:07:26",
+    "sampleCount": 238044,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\huya_android\\huya_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\huya_android\\huya_android.png"
+  }
+}

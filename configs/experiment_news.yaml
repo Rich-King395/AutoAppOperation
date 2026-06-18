@@ -2,19 +2,13 @@ experiment_id: Office
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
 environment_id: office
-router_id: Xiaomi
+router_id: TP-Link
 apps:
-  # - bbc_news_android
-  # - cnn_android
-  # - google_news_android
-  # - wikipedia_android
-  # - flipboard_android
-  - rednote_android
-  - threads_android
-  - bluesky_android
-  - lazada_android
-  - zalora_android
-  - taobao_android
+  - bbc_news_android
+  - cnn_android
+  - google_news_android
+  - wikipedia_android
+  - flipboard_android
   - ground_news_android
   - scmp_android
   - dailyhunt_android

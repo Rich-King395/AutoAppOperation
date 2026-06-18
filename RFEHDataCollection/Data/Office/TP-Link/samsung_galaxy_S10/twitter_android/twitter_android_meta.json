@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Collected\\TP-Link\\samsung_galaxy_S10/twitter_android",
+  "createdAt": "2026-06-17T20:44:04",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238038,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "collected-samsung-galaxy-s10-twitter-android-rep-1-20260617T122237103349Z",
+    "experimentId": "Collected",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "twitter_android",
+    "appLabel": "twitter_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Collected\\TP-Link\\samsung_galaxy_S10\\twitter_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Collected\\TP-Link\\samsung_galaxy_S10\\twitter_android\\twitter_android.csv",
+    "plot": "Data\\Collected\\TP-Link\\samsung_galaxy_S10\\twitter_android\\twitter_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-17T20:44:04",
+    "sampleCount": 238038,
+    "csvPath": "Data\\Collected\\TP-Link\\samsung_galaxy_S10\\twitter_android\\twitter_android.csv",
+    "pngPath": "Data\\Collected\\TP-Link\\samsung_galaxy_S10\\twitter_android\\twitter_android.png"
+  }
+}

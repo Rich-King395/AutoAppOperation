@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\TP-Link\\samsung_galaxy_S10/instagram_android",
+  "createdAt": "2026-06-17T22:01:23",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238040,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-instagram-android-rep-1-20260617T125653360525Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "TP-Link",
+    "appId": "instagram_android",
+    "appLabel": "instagram_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\TP-Link\\samsung_galaxy_S10\\instagram_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\instagram_android\\instagram_android.csv",
+    "plot": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\instagram_android\\instagram_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-17T22:01:23",
+    "sampleCount": 238040,
+    "csvPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\instagram_android\\instagram_android.csv",
+    "pngPath": "Data\\Office\\TP-Link\\samsung_galaxy_S10\\instagram_android\\instagram_android.png"
+  }
+}

@@ -95,7 +95,7 @@ apps:
     app_name: YouTube
     platformName: Android
     appPackage: com.google.android.youtube
-    appActivity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+    launchStrategy: monkey
     category: video
   - app_label: tiktok_android
     app_name: Tiktok
@@ -215,7 +215,6 @@ apps:
     app_name: GroundNews
     platformName: Android
     appPackage: com.checkitt
-    appActivity: vc.ucic.uciccore.MainNavigationActivity
     category: news
   - app_label: scmp_android
     app_name: SCMP
@@ -227,7 +226,6 @@ apps:
     app_name: DailyHunt
     platformName: Android
     appPackage: com.eterno
-    appActivity: com.newshunt.appview.common.ui.activity.HomeActivity
     category: news
   - app_label: example_ios_app
     platformName: iOS
