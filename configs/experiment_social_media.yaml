@@ -2,42 +2,26 @@ experiment_id: Office
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
 environment_id: office
-router_id: TP-Link
+router_id: Tenda
 apps:
-  # - reddit_android
-  # - pinterest_android
-  # - instagram_android
-  # - facebook_android
-  # - rednote_android
-  # - threads_android
-  # - bluesky_android
-  # - ebay_android
-  # - amazon_shopping_android
-  # - aliexpress_android
-  # - temu_android
-  # - shein_android
-  # - lazada_android
-  # - zalora_android
-  # - taobao_android
-  # - bilibili_android
-  # - youtube_android
-  # - tiktok_android
-  # - vimeo_android
-  # - twitch_android
-  # - youku_android
-  # - huya_android
-  # - spotify_android
-  # - joox_android
-  # - qq_music_android
-  # - youtube_music_android
-  # - netease_music_android
-  # - apple_music_android
-  # - anghami_android
-  # - kugou_music_android
-  # - bbc_news_android
-  # - cnn_android
-  # - google_news_android
-
+  - reddit_android
+  - pinterest_android
+  - instagram_android
+  - facebook_android
+  - rednote_android
+  - threads_android
+  - bluesky_android
+  - ebay_android
+  - amazon_shopping_android
+  - aliexpress_android
+  - temu_android
+  - shein_android
+  - lazada_android
+  - zalora_android
+  - taobao_android
+  - bbc_news_android
+  - cnn_android
+  - google_news_android
   - wikipedia_android
   - flipboard_android
   - ground_news_android

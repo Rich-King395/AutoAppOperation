@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Tenda\\samsung_galaxy_S10/bluesky_android",
+  "createdAt": "2026-06-19T19:53:21",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238046,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-bluesky-android-rep-1-20260619T092251721457Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Tenda",
+    "appId": "bluesky_android",
+    "appLabel": "bluesky_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Tenda\\samsung_galaxy_S10\\bluesky_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Tenda\\samsung_galaxy_S10\\bluesky_android\\bluesky_android.csv",
+    "plot": "Data\\Office\\Tenda\\samsung_galaxy_S10\\bluesky_android\\bluesky_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-19T19:53:21",
+    "sampleCount": 238046,
+    "csvPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\bluesky_android\\bluesky_android.csv",
+    "pngPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\bluesky_android\\bluesky_android.png"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Tenda\\samsung_galaxy_S10/vimeo_android",
+  "createdAt": "2026-06-19T13:20:03",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238039,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-vimeo-android-rep-1-20260619T045820134119Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Tenda",
+    "appId": "vimeo_android",
+    "appLabel": "vimeo_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Tenda\\samsung_galaxy_S10\\vimeo_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Tenda\\samsung_galaxy_S10\\vimeo_android\\vimeo_android.csv",
+    "plot": "Data\\Office\\Tenda\\samsung_galaxy_S10\\vimeo_android\\vimeo_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-19T13:20:03",
+    "sampleCount": 238039,
+    "csvPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\vimeo_android\\vimeo_android.csv",
+    "pngPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\vimeo_android\\vimeo_android.png"
+  }
+}

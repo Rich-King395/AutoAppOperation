@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Tenda\\samsung_galaxy_S10/tiktok_android",
+  "createdAt": "2026-06-19T12:55:21",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238043,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-samsung-galaxy-s10-tiktok-android-rep-1-20260619T035043666004Z",
+    "experimentId": "Office",
+    "environmentId": "office",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Tenda",
+    "appId": "tiktok_android",
+    "appLabel": "tiktok_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Tenda\\samsung_galaxy_S10\\tiktok_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Tenda\\samsung_galaxy_S10\\tiktok_android\\tiktok_android.csv",
+    "plot": "Data\\Office\\Tenda\\samsung_galaxy_S10\\tiktok_android\\tiktok_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-19T12:55:21",
+    "sampleCount": 238043,
+    "csvPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\tiktok_android\\tiktok_android.csv",
+    "pngPath": "Data\\Office\\Tenda\\samsung_galaxy_S10\\tiktok_android\\tiktok_android.png"
+  }
+}

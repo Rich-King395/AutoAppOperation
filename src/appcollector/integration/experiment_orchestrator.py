@@ -208,6 +208,10 @@ class ExperimentOrchestrator:
             mobile_client.launch_app(str(run["app_id"]))
             app_launched = True
             metadata["mobile_launch"] = "ok"
+            prepare_playback = getattr(mobile_client, "prepare_playback", None)
+            if callable(prepare_playback):
+                metadata["playback_prepare"] = prepare_playback(str(run["app_id"]), run_context=run_context)
+                logger.write(metadata)
             app_warmup_sec = int(run.get("app_warmup_sec", 0))
             metadata["app_warmup_sec"] = app_warmup_sec
             if app_warmup_sec > 0:

@@ -2,7 +2,7 @@ experiment_id: Office
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
 environment_id: office
-router_id: TP-Link
+router_id: Tenda
 apps:
   - spotify_android
   - joox_android

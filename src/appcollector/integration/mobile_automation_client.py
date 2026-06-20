@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any
 
 from appcollector.config import get_config_value, index_by, load_configs
+from appcollector.common.playback import prepare_playback
 from appcollector.drivers.android import activate_android_app
 from appcollector.drivers.factory import create_driver
 from appcollector.errors import ConfigError
@@ -114,6 +115,22 @@ class MobileAutomationClient:
         )
         flow.run()
         return {"status": "completed", "flow": flow_name, "events": metadata.get("events", [])}
+
+    def prepare_playback(self, app_id: str, run_context: dict[str, Any] | None = None) -> dict[str, Any]:
+        """Try to start playback for video/music apps before warm-up and RF collection."""
+        if self.driver is None or self.app_config is None:
+            raise ConfigError("MobileAutomationClient.launch_app() must run before prepare_playback().")
+        if app_id != self.app_config.get("app_label"):
+            raise ConfigError(f"Run app_id '{app_id}' does not match resolved app config.")
+
+        metadata = (run_context or {}).get("metadata", {})
+        logger = MetadataEventLogger(metadata)
+        return prepare_playback(
+            driver=self.driver,
+            app_config=self.app_config,
+            logger=logger,
+            target_package=str(get_config_value(self.app_config, "appPackage", "package")),
+        )
 
     def stop_app(self, app_id: str) -> dict[str, Any] | None:
         """Terminate the target app and any foreground external app without clearing app data.

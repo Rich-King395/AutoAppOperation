@@ -90,12 +90,28 @@ apps:
     platformName: Android
     appPackage: tv.danmaku.bili
     appActivity: .MainActivityV2
+    playback_profile:
+      max_attempts: 3
+      startup_wait_sec: 4
+      after_tap_wait_sec: 6
+      tap_points:
+        - [0.50, 0.36]
+        - [0.50, 0.52]
+        - [0.50, 0.68]
     category: video
   - app_label: youtube_android
     app_name: YouTube
     platformName: Android
     appPackage: com.google.android.youtube
     launchStrategy: monkey
+    playback_profile:
+      max_attempts: 3
+      startup_wait_sec: 4
+      after_tap_wait_sec: 6
+      tap_points:
+        - [0.50, 0.42]
+        - [0.50, 0.58]
+        - [0.50, 0.72]
     category: video
   - app_label: tiktok_android
     app_name: Tiktok
