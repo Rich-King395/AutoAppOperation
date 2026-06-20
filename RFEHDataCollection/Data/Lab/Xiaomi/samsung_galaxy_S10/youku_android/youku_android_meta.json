@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Lab\\Xiaomi\\samsung_galaxy_S10/youku_android",
+  "createdAt": "2026-06-20T15:10:52",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238050,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "lab-samsung-galaxy-s10-youku-android-rep-1-20260620T045837900477Z",
+    "experimentId": "Lab",
+    "environmentId": "Lab",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "youku_android",
+    "appLabel": "youku_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Lab\\Xiaomi\\samsung_galaxy_S10\\youku_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\youku_android\\youku_android.csv",
+    "plot": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\youku_android\\youku_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-20T15:10:52",
+    "sampleCount": 238050,
+    "csvPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\youku_android\\youku_android.csv",
+    "pngPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\youku_android\\youku_android.png"
+  }
+}

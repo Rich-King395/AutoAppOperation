@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Lab\\Xiaomi\\samsung_galaxy_S10/kugou_music_android",
+  "createdAt": "2026-06-20T18:18:28",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238048,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "lab-samsung-galaxy-s10-kugou-music-android-rep-1-20260620T074416196963Z",
+    "experimentId": "Lab",
+    "environmentId": "Lab",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "kugou_music_android",
+    "appLabel": "kugou_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Lab\\Xiaomi\\samsung_galaxy_S10\\kugou_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.csv",
+    "plot": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-20T18:18:28",
+    "sampleCount": 238048,
+    "csvPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.csv",
+    "pngPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\kugou_music_android\\kugou_music_android.png"
+  }
+}

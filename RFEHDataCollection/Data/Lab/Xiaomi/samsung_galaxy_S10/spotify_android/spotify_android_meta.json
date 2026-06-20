@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Lab\\Xiaomi\\samsung_galaxy_S10/spotify_android",
+  "createdAt": "2026-06-20T16:06:13",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238046,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "lab-samsung-galaxy-s10-spotify-android-rep-1-20260620T074416196956Z",
+    "experimentId": "Lab",
+    "environmentId": "Lab",
+    "deviceId": "samsung_galaxy_S10",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "spotify_android",
+    "appLabel": "spotify_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Lab\\Xiaomi\\samsung_galaxy_S10\\spotify_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\spotify_android\\spotify_android.csv",
+    "plot": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\spotify_android\\spotify_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-20T16:06:13",
+    "sampleCount": 238046,
+    "csvPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\spotify_android\\spotify_android.csv",
+    "pngPath": "Data\\Lab\\Xiaomi\\samsung_galaxy_S10\\spotify_android\\spotify_android.png"
+  }
+}

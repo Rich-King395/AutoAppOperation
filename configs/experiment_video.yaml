@@ -1,20 +1,21 @@
-experiment_id: Office
+experiment_id: Lab
 device_id: samsung_galaxy_S10
 hardware_id: arduino_vcap_com3
-environment_id: office
-router_id: Tenda
+environment_id: Lab
+router_id: Xiaomi
 apps:
-  # - bilibili_android
-  # - youtube_android
-  # - tiktok_android
+  - bilibili_android
+  - youtube_android
+  - tiktok_android
   - vimeo_android
   - twitch_android
   - youku_android
   - huya_android
+  - ted_android
 app_warmup_sec: 60
 duration_sec: 1200
 repetitions: 1
-output_root: data/raw/Office
+output_root: data/raw/Lab
 rf_collector:
   base_url: http://127.0.0.1:8000
   smooth: true
