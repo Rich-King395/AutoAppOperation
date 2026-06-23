@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\redmi_note_13/vimeo_android",
+  "createdAt": "2026-06-22T20:17:51",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238056,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-redmi-note-13-vimeo-android-rep-1-20260622T104931847113Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "redmi_note_13",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "vimeo_android",
+    "appLabel": "vimeo_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\redmi_note_13\\vimeo_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\redmi_note_13\\vimeo_android\\vimeo_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\redmi_note_13\\vimeo_android\\vimeo_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-22T20:17:51",
+    "sampleCount": 238056,
+    "csvPath": "Data\\Office\\Xiaomi\\redmi_note_13\\vimeo_android\\vimeo_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\redmi_note_13\\vimeo_android\\vimeo_android.png"
+  }
+}

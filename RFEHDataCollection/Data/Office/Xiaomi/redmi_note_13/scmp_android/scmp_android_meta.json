@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\redmi_note_13/scmp_android",
+  "createdAt": "2026-06-23T15:42:17",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238057,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-redmi-note-13-scmp-android-rep-1-20260623T034648214546Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "redmi_note_13",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "scmp_android",
+    "appLabel": "scmp_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\redmi_note_13\\scmp_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\redmi_note_13\\scmp_android\\scmp_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\redmi_note_13\\scmp_android\\scmp_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-23T15:42:17",
+    "sampleCount": 238057,
+    "csvPath": "Data\\Office\\Xiaomi\\redmi_note_13\\scmp_android\\scmp_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\redmi_note_13\\scmp_android\\scmp_android.png"
+  }
+}

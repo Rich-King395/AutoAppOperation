@@ -6,6 +6,13 @@ devices:
     udid: RF8M903JTFR
     adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
     appiumServerUrl: http://127.0.0.1:4723
+  - name: redmi_note_13
+    platformName: Android
+    automationName: UiAutomator2
+    deviceName: redmi_note_13
+    udid: 99c52c95
+    adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
+    appiumServerUrl: http://127.0.0.1:4723
   - name: ios_iphone_01
     platformName: iOS
     automationName: XCUITest

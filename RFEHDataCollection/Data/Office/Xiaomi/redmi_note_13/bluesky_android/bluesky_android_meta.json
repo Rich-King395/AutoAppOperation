@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\redmi_note_13/bluesky_android",
+  "createdAt": "2026-06-23T10:58:51",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238050,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-redmi-note-13-bluesky-android-rep-1-20260623T023735861284Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "redmi_note_13",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "bluesky_android",
+    "appLabel": "bluesky_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\redmi_note_13\\bluesky_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\redmi_note_13\\bluesky_android\\bluesky_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\redmi_note_13\\bluesky_android\\bluesky_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-23T10:58:51",
+    "sampleCount": 238050,
+    "csvPath": "Data\\Office\\Xiaomi\\redmi_note_13\\bluesky_android\\bluesky_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\redmi_note_13\\bluesky_android\\bluesky_android.png"
+  }
+}

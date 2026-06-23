@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\redmi_note_13/lazada_android",
+  "createdAt": "2026-06-23T13:12:10",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238053,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-redmi-note-13-lazada-android-rep-1-20260623T034648214537Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "redmi_note_13",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "lazada_android",
+    "appLabel": "lazada_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\redmi_note_13\\lazada_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\redmi_note_13\\lazada_android\\lazada_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\redmi_note_13\\lazada_android\\lazada_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-23T13:12:10",
+    "sampleCount": 238053,
+    "csvPath": "Data\\Office\\Xiaomi\\redmi_note_13\\lazada_android\\lazada_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\redmi_note_13\\lazada_android\\lazada_android.png"
+  }
+}
