@@ -1,20 +1,20 @@
 experiment_id: Office
-device_id: redmi_note_13
+device_id: google_pixel_4
 hardware_id: arduino_vcap_com3
 environment_id: Office
 router_id: Xiaomi
 apps:
-  # - reddit_android
-  # - twitter_android
-  # - pinterest_android
-  # - instagram_android
+  - reddit_android
+  - twitter_android
+  - pinterest_android
+  - instagram_android
 
-  # - facebook_android
-  # - rednote_android
-  # - threads_android
-  # - bluesky_android
-  # - ebay_android
-  # - amazon_shopping_android
+  - facebook_android
+  - rednote_android
+  - threads_android
+  - bluesky_android
+  - ebay_android
+  - amazon_shopping_android
   - aliexpress_android
   - temu_android
   - shein_android

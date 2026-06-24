@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\redmi_note_13/netease_music_android",
+  "createdAt": "2026-06-23T19:51:41",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238035,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-redmi-note-13-netease-music-android-rep-1-20260623T112939693827Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "redmi_note_13",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "netease_music_android",
+    "appLabel": "netease_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\redmi_note_13\\netease_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\redmi_note_13\\netease_music_android\\netease_music_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\redmi_note_13\\netease_music_android\\netease_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-23T19:51:41",
+    "sampleCount": 238035,
+    "csvPath": "Data\\Office\\Xiaomi\\redmi_note_13\\netease_music_android\\netease_music_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\redmi_note_13\\netease_music_android\\netease_music_android.png"
+  }
+}

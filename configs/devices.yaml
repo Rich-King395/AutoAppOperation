@@ -13,6 +13,13 @@ devices:
     udid: 99c52c95
     adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
     appiumServerUrl: http://127.0.0.1:4723
+  - name: google_pixel_4
+    platformName: Android
+    automationName: UiAutomator2
+    deviceName: google_pixel_4
+    udid: 9B081FFAZ00EDY
+    adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
+    appiumServerUrl: http://127.0.0.1:4723
   - name: ios_iphone_01
     platformName: iOS
     automationName: XCUITest

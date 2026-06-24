@@ -1,22 +1,22 @@
-experiment_id: Lab
-device_id: samsung_galaxy_S10
+experiment_id: Office
+device_id: redmi_note_13
 hardware_id: arduino_vcap_com3
-environment_id: Lab
+environment_id: Office
 router_id: Xiaomi
 apps:
-  - spotify_android
-  - joox_android
-  - qq_music_android
-  - youtube_music_android
-  - netease_music_android
+  # - spotify_android
+  # - joox_android
+  # - qq_music_android
+  # - youtube_music_android
+  # - netease_music_android
   - apple_music_android
-  - anghami_android
+  # - anghami_android
   - kugou_music_android
 
 app_warmup_sec: 60
 duration_sec: 1200
 repetitions: 1
-output_root: data/raw/Lab
+output_root: data/raw/Office
 rf_collector:
   base_url: http://127.0.0.1:8000
   smooth: true
