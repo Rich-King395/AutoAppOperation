@@ -1,5 +1,5 @@
 experiment_id: Office
-device_id: redmi_note_13
+device_id: google_pixel_4
 hardware_id: arduino_vcap_com3
 environment_id: Office
 router_id: Xiaomi
@@ -9,8 +9,8 @@ apps:
   # - tiktok_android
   # - vimeo_android
   # - twitch_android
-  # - youku_android
-  # - huya_android
+  - youku_android
+  - huya_android
   - ted_android
 app_warmup_sec: 60
 duration_sec: 1200

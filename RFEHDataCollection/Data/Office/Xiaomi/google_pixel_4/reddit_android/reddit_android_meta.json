@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/reddit_android",
+  "createdAt": "2026-06-24T11:48:27",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238042,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-reddit-android-rep-1-20260624T032705900427Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "reddit_android",
+    "appLabel": "reddit_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\reddit_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\reddit_android\\reddit_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\reddit_android\\reddit_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-24T11:48:27",
+    "sampleCount": 238042,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\reddit_android\\reddit_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\reddit_android\\reddit_android.png"
+  }
+}

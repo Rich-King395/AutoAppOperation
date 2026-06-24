@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/netease_music_android",
+  "createdAt": "2026-06-24T16:51:19",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238047,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-netease-music-android-rep-1-20260624T070155945133Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "netease_music_android",
+    "appLabel": "netease_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\netease_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\netease_music_android\\netease_music_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\netease_music_android\\netease_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-24T16:51:19",
+    "sampleCount": 238047,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\netease_music_android\\netease_music_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\netease_music_android\\netease_music_android.png"
+  }
+}
