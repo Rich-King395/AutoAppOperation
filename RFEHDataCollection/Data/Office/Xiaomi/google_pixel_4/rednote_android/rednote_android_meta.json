@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/rednote_android",
+  "createdAt": "2026-06-24T19:13:55",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238051,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-rednote-android-rep-1-20260624T103107379330Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "rednote_android",
+    "appLabel": "rednote_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\rednote_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\rednote_android\\rednote_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\rednote_android\\rednote_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-24T19:13:55",
+    "sampleCount": 238051,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\rednote_android\\rednote_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\rednote_android\\rednote_android.png"
+  }
+}

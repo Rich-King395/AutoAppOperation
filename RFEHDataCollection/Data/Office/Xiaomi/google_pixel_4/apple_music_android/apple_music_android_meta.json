@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/apple_music_android",
+  "createdAt": "2026-06-25T16:39:58",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238045,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-apple-music-android-rep-1-20260625T081809656410Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "apple_music_android",
+    "appLabel": "apple_music_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\apple_music_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\apple_music_android\\apple_music_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\apple_music_android\\apple_music_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-25T16:39:58",
+    "sampleCount": 238045,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\apple_music_android\\apple_music_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\apple_music_android\\apple_music_android.png"
+  }
+}

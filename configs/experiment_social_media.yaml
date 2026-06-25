@@ -4,10 +4,10 @@ hardware_id: arduino_vcap_com3
 environment_id: Office
 router_id: Xiaomi
 apps:
-  - reddit_android
-  - twitter_android
-  - pinterest_android
-  - instagram_android
+  # - reddit_android
+  # - twitter_android
+  # - pinterest_android
+  # - instagram_android
 
   # - facebook_android
   # - rednote_android
@@ -26,7 +26,7 @@ apps:
   # - google_news_android
   # - wikipedia_android
   # - flipboard_android
-  # - ground_news_android
+  - ground_news_android
   # - scmp_android
   # - dailyhunt_android
 

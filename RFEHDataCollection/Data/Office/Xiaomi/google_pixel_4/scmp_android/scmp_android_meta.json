@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/scmp_android",
+  "createdAt": "2026-06-25T14:25:12",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238052,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-scmp-android-rep-1-20260625T045902303292Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "scmp_android",
+    "appLabel": "scmp_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\scmp_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\scmp_android\\scmp_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\scmp_android\\scmp_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-25T14:25:12",
+    "sampleCount": 238052,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\scmp_android\\scmp_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\scmp_android\\scmp_android.png"
+  }
+}

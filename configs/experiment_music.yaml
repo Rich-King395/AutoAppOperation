@@ -4,14 +4,14 @@ hardware_id: arduino_vcap_com3
 environment_id: Office
 router_id: Xiaomi
 apps:
-  - spotify_android
-  - joox_android
-  - qq_music_android
-  - youtube_music_android
-  - netease_music_android
+  # - spotify_android
+  # - joox_android
+  # - qq_music_android
+  # - youtube_music_android
+  # - netease_music_android
   - apple_music_android
-  - anghami_android
-  - kugou_music_android
+  # - anghami_android
+  # - kugou_music_android
 
 app_warmup_sec: 60
 duration_sec: 1200

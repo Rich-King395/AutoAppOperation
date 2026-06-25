@@ -8,10 +8,10 @@ apps:
   # - youtube_android
   # - tiktok_android
   # - vimeo_android
-  # - twitch_android
-  - youku_android
-  - huya_android
-  - ted_android
+  - twitch_android
+  # - youku_android
+  # - huya_android
+  # - ted_android
 app_warmup_sec: 60
 duration_sec: 1200
 repetitions: 1

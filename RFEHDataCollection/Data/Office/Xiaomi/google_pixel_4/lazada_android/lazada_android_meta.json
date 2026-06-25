@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\google_pixel_4/lazada_android",
+  "createdAt": "2026-06-25T11:49:07",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238047,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-google-pixel-4-lazada-android-rep-1-20260625T030619146100Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "google_pixel_4",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "lazada_android",
+    "appLabel": "lazada_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\lazada_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\lazada_android\\lazada_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\lazada_android\\lazada_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-25T11:49:07",
+    "sampleCount": 238047,
+    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\lazada_android\\lazada_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\lazada_android\\lazada_android.png"
+  }
+}
