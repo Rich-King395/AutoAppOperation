@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\honor_v30_pro/bluesky_android",
+  "createdAt": "2026-06-26T22:19:58",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238057,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-honor-v30-pro-bluesky-android-rep-1-20260626T131400557066Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "honor_v30_pro",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "bluesky_android",
+    "appLabel": "bluesky_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\honor_v30_pro\\bluesky_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\honor_v30_pro\\bluesky_android\\bluesky_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\honor_v30_pro\\bluesky_android\\bluesky_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-26T22:19:58",
+    "sampleCount": 238057,
+    "csvPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\bluesky_android\\bluesky_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\bluesky_android\\bluesky_android.png"
+  }
+}
