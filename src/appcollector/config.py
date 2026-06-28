@@ -12,6 +12,10 @@ CONFIG_FILES = {
     "experiment_matrix": "experiment_matrix.yaml",
 }
 
+OPTIONAL_CONFIG_FILES = {
+    "device_app_overrides": "device_app_overrides.yaml",
+}
+
 REQUIRED_TOP_LEVEL_KEYS = {
     "devices": "devices",
     "apps": "apps",
@@ -33,6 +37,9 @@ def load_yaml(path: Path) -> dict[str, Any]:
 def load_configs(config_dir: Path | str = "configs") -> dict[str, dict[str, Any]]:
     base = Path(config_dir)
     configs = {name: load_yaml(base / filename) for name, filename in CONFIG_FILES.items()}
+    for name, filename in OPTIONAL_CONFIG_FILES.items():
+        path = base / filename
+        configs[name] = load_yaml(path) if path.exists() else {"overrides": {}}
     validate_configs(configs)
     return configs
 
@@ -59,6 +66,41 @@ def validate_configs(configs: dict[str, dict[str, Any]]) -> None:
             raise ConfigError(f"Scenario missing duration_sec: {scenario}")
         if "random_seed" not in scenario:
             raise ConfigError(f"Scenario missing random_seed: {scenario}")
+
+    override_config = configs.get("device_app_overrides", {})
+    overrides = override_config.get("overrides", {})
+    if not isinstance(overrides, dict):
+        raise ConfigError("device_app_overrides must contain a mapping at 'overrides'")
+    for device_id, app_overrides in overrides.items():
+        if not isinstance(app_overrides, dict):
+            raise ConfigError(f"Device override for '{device_id}' must be a mapping")
+        for app_id, override in app_overrides.items():
+            if not isinstance(override, dict):
+                raise ConfigError(f"App override for '{device_id}/{app_id}' must be a mapping")
+
+
+def merge_device_app_override(
+    app_config: dict[str, Any],
+    configs: dict[str, dict[str, Any]],
+    device_id: str,
+    app_id: str,
+) -> dict[str, Any]:
+    """Return app config with device-specific override fields applied."""
+    merged = dict(app_config)
+    overrides = configs.get("device_app_overrides", {}).get("overrides", {})
+    device_overrides = overrides.get(device_id, {})
+    override = device_overrides.get(app_id, {})
+    return _deep_merge(merged, override)
+
+
+def _deep_merge(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]:
+    merged = dict(base)
+    for key, value in override.items():
+        if isinstance(value, dict) and isinstance(merged.get(key), dict):
+            merged[key] = _deep_merge(merged[key], value)
+        else:
+            merged[key] = value
+    return merged
 
 
 def get_config_value(config: dict[str, Any], *keys: str, required: bool = True) -> Any:

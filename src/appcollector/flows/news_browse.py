@@ -1,4 +1,4 @@
-from appcollector.common.app_state import ensure_app_foreground, guarded_back
+from appcollector.common.app_state import guarded_back
 from appcollector.common.gestures import slow_swipe_up_jittered, swipe_up_jittered, tap_relative_jittered
 from appcollector.common.popups import dismiss_known_popups
 from appcollector.flows.base import Flow
@@ -20,12 +20,12 @@ class NewsBrowse(Flow):
         if action == "open_article":
             tap_relative_jittered(self.driver, self.randomizer, 0.5, 0.45, jitter=0.1)
             self.wait_random(1.5, 3.0)
-            if not ensure_app_foreground(self.driver, self.target_package):
+            if not self.ensure_foreground():
                 return "open_article:recovered_after_open"
             for _ in range(self.randomizer.randint(1, 3)):
                 slow_swipe_up_jittered(self.driver, self.randomizer)
                 self.wait_random(1.0, 2.5)
-            guarded_back(self.driver, self.target_package)
+            guarded_back(self.driver, self.target_package, foreground_guard=self.foreground_guard)
             self.wait_random(0.8, 1.8)
         elif action == "wait":
             self.wait_random(2.0, 5.0)

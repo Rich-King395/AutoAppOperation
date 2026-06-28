@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\honor_v30_pro/google_news_android",
+  "createdAt": "2026-06-27T14:35:57",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238045,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-honor-v30-pro-google-news-android-rep-1-20260627T053006749233Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "honor_v30_pro",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "google_news_android",
+    "appLabel": "google_news_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\honor_v30_pro\\google_news_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\honor_v30_pro\\google_news_android\\google_news_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\honor_v30_pro\\google_news_android\\google_news_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-27T14:35:57",
+    "sampleCount": 238045,
+    "csvPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\google_news_android\\google_news_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\google_news_android\\google_news_android.png"
+  }
+}

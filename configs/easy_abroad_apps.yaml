@@ -1,0 +1,97 @@
+container:
+  device_id: honor_v30_pro
+  container_id: easy_abroad
+  container_name: Chujingyi
+  packageName: com.easy.abroad
+  allAppsActivity: com.easy.abroad.activities.SecondPageActivity
+  enterAllApps:
+    fromActivity: com.easy.abroad.activities.MainActivity
+    labels:
+      - 全部
+  batchPolicy:
+    keepContainerAlive: false
+    reopenContainerForEachApp: true
+    stopContainerAfterBatch: true
+
+apps:
+  - displayName: AliExpress（全球版）
+    app_label: aliexpress_android
+    category: shopping
+  - displayName: Amazon Shopping
+    app_label: amazon_shopping_android
+    category: shopping
+  - displayName: Anghami
+    app_label: anghami_android
+    category: music
+  - displayName: Apple Music
+    app_label: apple_music_android
+    category: music
+  - displayName: BBC News
+    app_label: bbc_news_android
+    category: news
+  - displayName: Bluesky
+    app_label: bluesky_android
+    category: social_media
+  - displayName: CNN
+    app_label: cnn_android
+    category: news
+  - displayName: Dailyhunt - News & Magazines
+    app_label: dailyhunt_android
+    category: news
+  - displayName: eBay
+    app_label: ebay_android
+    category: shopping
+  - displayName: Facebook
+    app_label: facebook_android
+    category: social_media
+  - displayName: Google News
+    app_label: google_news_android
+    category: news
+  - displayName: Instagram
+    app_label: instagram_android
+    category: social_media
+  - displayName: JOOX Music
+    app_label: joox_android
+    category: music
+  - displayName: Lazada
+    app_label: lazada_android
+    category: shopping
+  - displayName: Pinterest
+    app_label: pinterest_android
+    category: social_media
+  - displayName: Reddit
+    app_label: reddit_android
+    category: social_media
+  - displayName: Spotify
+    app_label: spotify_android
+    category: music
+  - displayName: TED
+    app_label: ted_android
+    category: video
+  - displayName: Temu
+    app_label: temu_android
+    category: shopping
+  - displayName: Threads
+    app_label: threads_android
+    category: social_media
+  - displayName: Twitch
+    app_label: twitch_android
+    category: video
+  - displayName: Vimeo
+    app_label: vimeo_android
+    category: video
+  - displayName: Wikipedia
+    app_label: wikipedia_android
+    category: news
+  - displayName: X
+    app_label: twitter_android
+    category: social_media
+  - displayName: YouTube
+    app_label: youtube_android
+    category: video
+  - displayName: YouTube Music
+    app_label: youtube_music_android
+    category: music
+  - displayName: ZALORA
+    app_label: zalora_android
+    category: shopping

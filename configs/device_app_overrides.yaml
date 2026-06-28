@@ -1,0 +1,177 @@
+easy_abroad_container: &easy_abroad_container
+  packageName: com.easy.abroad
+  keepAlive: false
+  openAllApps: true
+  allAppsLabels:
+    - 全部
+  startupWaitSec: 5
+  findTimeoutSec: 25
+  targetWaitSec: 30
+
+overrides:
+  honor_v30_pro:
+    aliexpress_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - AliExpress（全球版）
+          - AliExpress
+    amazon_shopping_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Amazon Shopping
+    anghami_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Anghami
+    apple_music_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Apple Music
+    bbc_news_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - BBC News
+    bluesky_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Bluesky
+    cnn_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - CNN
+    dailyhunt_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Dailyhunt - News & Magazines
+          - Dailyhunt
+    ebay_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - eBay
+    facebook_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Facebook
+    google_news_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Google News
+    instagram_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Instagram
+    joox_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - JOOX Music
+          - JOOX
+    lazada_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Lazada
+    pinterest_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Pinterest
+    reddit_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Reddit
+    spotify_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Spotify
+    ted_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - TED
+    temu_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Temu
+    threads_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Threads
+    twitch_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Twitch
+    twitter_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - X
+    vimeo_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Vimeo
+    wikipedia_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - Wikipedia
+    youtube_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - YouTube
+    youtube_music_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - YouTube Music
+    zalora_android:
+      launchStrategy: container
+      container:
+        <<: *easy_abroad_container
+        appNames:
+          - ZALORA

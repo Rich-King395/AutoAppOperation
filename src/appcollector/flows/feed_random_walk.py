@@ -34,6 +34,7 @@ class FeedRandomWalk(Flow):
                 self.target_package,
                 open_action=lambda: tap_relative_jittered(self.driver, self.randomizer, 0.5, 0.48, jitter=0.08),
                 dwell_sec=self.randomizer.uniform(2.0, 5.0),
+                foreground_guard=self.foreground_guard,
             )
             action = f"{action}:{result}"
             self.wait_random(0.8, 2.0)

@@ -1,5 +1,5 @@
 from time import sleep
-from typing import Any
+from typing import Any, Callable
 
 from appcollector.common.app_state import ensure_app_foreground
 from appcollector.common.gestures import swipe_up_jittered, tap_relative
@@ -25,6 +25,7 @@ def prepare_playback(
     app_config: dict[str, Any],
     logger: Any | None = None,
     target_package: str | None = None,
+    foreground_guard: Callable[[], bool] | None = None,
 ) -> dict[str, Any]:
     """Try to put video/music apps into playback before RF collection starts."""
     category = str(app_config.get("category", "")).lower()
@@ -44,7 +45,7 @@ def prepare_playback(
 
     actions: list[dict[str, Any]] = []
     for attempt in range(1, max_attempts + 1):
-        if not ensure_app_foreground(driver, target_package):
+        if not ensure_app_foreground(driver, target_package, foreground_guard=foreground_guard):
             actions.append({"attempt": attempt, "action": "recover_foreground"})
             sleep(1.0)
 
@@ -56,7 +57,7 @@ def prepare_playback(
             actions.append({"attempt": attempt, "action": "tap_error", "error": str(exc)})
 
         sleep(after_tap_wait_sec)
-        foreground = ensure_app_foreground(driver, target_package)
+        foreground = ensure_app_foreground(driver, target_package, foreground_guard=foreground_guard)
         if foreground and attempt >= 1:
             _event(
                 logger,
@@ -74,7 +75,7 @@ def prepare_playback(
             except Exception as exc:
                 actions.append({"attempt": attempt, "action": "swipe_error", "error": str(exc)})
 
-    final_foreground = ensure_app_foreground(driver, target_package)
+    final_foreground = ensure_app_foreground(driver, target_package, foreground_guard=foreground_guard)
     result = {
         "skipped": False,
         "category": category,

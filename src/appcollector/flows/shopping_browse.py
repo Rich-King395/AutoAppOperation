@@ -1,4 +1,4 @@
-from appcollector.common.app_state import ensure_app_foreground, guarded_back
+from appcollector.common.app_state import guarded_back
 from appcollector.common.gestures import swipe_down_jittered, swipe_up_jittered, tap_relative_jittered
 from appcollector.common.popups import dismiss_known_popups
 from appcollector.flows.base import Flow
@@ -21,12 +21,12 @@ class ShoppingBrowse(Flow):
         if action == "open_detail":
             tap_relative_jittered(self.driver, self.randomizer, 0.5, 0.52, jitter=0.1)
             self.wait_random(1.5, 3.5)
-            if not ensure_app_foreground(self.driver, self.target_package):
+            if not self.ensure_foreground():
                 return "open_detail:recovered_after_open"
             for _ in range(self.randomizer.randint(1, 4)):
                 swipe_up_jittered(self.driver, self.randomizer, duration_ms=self.randomizer.randint(700, 1200))
                 self.wait_random(0.8, 2.0)
-            guarded_back(self.driver, self.target_package)
+            guarded_back(self.driver, self.target_package, foreground_guard=self.foreground_guard)
             self.wait_random(0.8, 2.0)
         elif action == "swipe_down":
             swipe_down_jittered(self.driver, self.randomizer)

@@ -1,34 +1,33 @@
 experiment_id: Office
-device_id: google_pixel_4
+device_id: honor_v30_pro
 hardware_id: arduino_vcap_com3
 environment_id: Office
 router_id: Xiaomi
 apps:
-  # - reddit_android
-  # - twitter_android
-  # - pinterest_android
-  # - instagram_android
-
-  # - facebook_android
-  # - rednote_android
-  # - threads_android
-  # - bluesky_android
-  # - ebay_android
-  # - amazon_shopping_android
-  # - aliexpress_android
-  # - temu_android
-  # - shein_android
-  # - lazada_android
-  # - zalora_android
-  # - taobao_android
-  # - bbc_news_android
-  # - cnn_android
-  # - google_news_android
-  # - wikipedia_android
-  # - flipboard_android
+  - reddit_android
+  - twitter_android
+  - pinterest_android
+  - instagram_android
+  - facebook_android
+  - rednote_android
+  - threads_android
+  - bluesky_android
+  - ebay_android
+  - amazon_shopping_android
+  - aliexpress_android
+  - temu_android
+  - shein_android
+  - lazada_android
+  - zalora_android
+  - taobao_android
+  - bbc_news_android
+  - cnn_android
+  - google_news_android
+  - wikipedia_android
+  - flipboard_android
   - ground_news_android
-  # - scmp_android
-  # - dailyhunt_android
+  - scmp_android
+  - dailyhunt_android
 
 app_warmup_sec: 60
 duration_sec: 1200

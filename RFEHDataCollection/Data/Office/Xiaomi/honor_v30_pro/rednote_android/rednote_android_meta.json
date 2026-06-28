@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "folderName": "Office\\Xiaomi\\honor_v30_pro/rednote_android",
+  "createdAt": "2026-06-27T11:51:15",
+  "durationSeconds": 1200.0,
+  "sampleCount": 238053,
+  "smooth": true,
+  "showRaw": true,
+  "smoothWindow": 11,
+  "experimentContext": {
+    "runId": "office-honor-v30-pro-rednote-android-rep-1-20260627T024726510129Z",
+    "experimentId": "Office",
+    "environmentId": "Office",
+    "deviceId": "honor_v30_pro",
+    "hardwareId": "arduino_vcap_com3",
+    "routerId": "Xiaomi",
+    "appId": "rednote_android",
+    "appLabel": "rednote_android",
+    "durationSec": 1200,
+    "appWarmupSec": 60,
+    "repetitionId": 1,
+    "outputDir": "data\\raw\\Office\\Xiaomi\\honor_v30_pro\\rednote_android"
+  },
+  "rawHeader": [
+    "Time(ms)",
+    "ADC",
+    "Voltage(V)"
+  ],
+  "files": {
+    "rawCsv": "Data\\Office\\Xiaomi\\honor_v30_pro\\rednote_android\\rednote_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\honor_v30_pro\\rednote_android\\rednote_android.png"
+  },
+  "error": "",
+  "result": {
+    "reason": "duration reached",
+    "completedAt": "2026-06-27T11:51:15",
+    "sampleCount": 238053,
+    "csvPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\rednote_android\\rednote_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\rednote_android\\rednote_android.png"
+  }
+}

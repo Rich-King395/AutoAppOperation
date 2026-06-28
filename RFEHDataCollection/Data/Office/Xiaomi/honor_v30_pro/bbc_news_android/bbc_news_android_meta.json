@@ -1,17 +1,17 @@
 {
   "status": "completed",
-  "folderName": "Office\\Xiaomi\\google_pixel_4/bbc_news_android",
-  "createdAt": "2026-06-25T12:32:24",
+  "folderName": "Office\\Xiaomi\\honor_v30_pro/bbc_news_android",
+  "createdAt": "2026-06-27T13:52:01",
   "durationSeconds": 1200.0,
-  "sampleCount": 238046,
+  "sampleCount": 238045,
   "smooth": true,
   "showRaw": true,
   "smoothWindow": 11,
   "experimentContext": {
-    "runId": "office-google-pixel-4-bbc-news-android-rep-1-20260625T030619146103Z",
+    "runId": "office-honor-v30-pro-bbc-news-android-rep-1-20260627T053006749231Z",
     "experimentId": "Office",
     "environmentId": "Office",
-    "deviceId": "google_pixel_4",
+    "deviceId": "honor_v30_pro",
     "hardwareId": "arduino_vcap_com3",
     "routerId": "Xiaomi",
     "appId": "bbc_news_android",
@@ -19,7 +19,7 @@
     "durationSec": 1200,
     "appWarmupSec": 60,
     "repetitionId": 1,
-    "outputDir": "data\\raw\\Office\\Xiaomi\\google_pixel_4\\bbc_news_android"
+    "outputDir": "data\\raw\\Office\\Xiaomi\\honor_v30_pro\\bbc_news_android"
   },
   "rawHeader": [
     "Time(ms)",
@@ -27,15 +27,15 @@
     "Voltage(V)"
   ],
   "files": {
-    "rawCsv": "Data\\Office\\Xiaomi\\google_pixel_4\\bbc_news_android\\bbc_news_android.csv",
-    "plot": "Data\\Office\\Xiaomi\\google_pixel_4\\bbc_news_android\\bbc_news_android.png"
+    "rawCsv": "Data\\Office\\Xiaomi\\honor_v30_pro\\bbc_news_android\\bbc_news_android.csv",
+    "plot": "Data\\Office\\Xiaomi\\honor_v30_pro\\bbc_news_android\\bbc_news_android.png"
   },
   "error": "",
   "result": {
     "reason": "duration reached",
-    "completedAt": "2026-06-25T12:32:24",
-    "sampleCount": 238046,
-    "csvPath": "Data\\Office\\Xiaomi\\google_pixel_4\\bbc_news_android\\bbc_news_android.csv",
-    "pngPath": "Data\\Office\\Xiaomi\\google_pixel_4\\bbc_news_android\\bbc_news_android.png"
+    "completedAt": "2026-06-27T13:52:01",
+    "sampleCount": 238045,
+    "csvPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\bbc_news_android\\bbc_news_android.csv",
+    "pngPath": "Data\\Office\\Xiaomi\\honor_v30_pro\\bbc_news_android\\bbc_news_android.png"
   }
 }

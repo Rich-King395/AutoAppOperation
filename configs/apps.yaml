@@ -143,6 +143,12 @@ apps:
     appPackage: com.huya.kiwi
     appActivity: com.duowan.kiwi.homepage.Homepage
     category: video
+  - app_label: ted_android
+    app_name: TED
+    platformName: Android
+    appPackage: com.ted.android
+    appActivity: com.ted.android.MainActivity
+    category: video
   - app_label: netease_music_android
     app_name: NetEase
     platformName: Android

@@ -15,9 +15,10 @@ import shutil
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from time import sleep
+from typing import Any, Callable
 
-from appcollector.config import get_config_value, index_by, load_configs
+from appcollector.config import get_config_value, index_by, load_configs, merge_device_app_override
 from appcollector.common.playback import prepare_playback
 from appcollector.drivers.android import activate_android_app
 from appcollector.drivers.factory import create_driver
@@ -40,6 +41,7 @@ PROTECTED_ANDROID_PACKAGES = {
     "com.google.android.apps.nexuslauncher",
     "com.android.launcher",
     "com.android.launcher3",
+    "com.huawei.android.launcher",
 }
 
 
@@ -79,7 +81,7 @@ class MobileAutomationClient:
             raise ConfigError(f"App '{app_id}' was not found in configs/apps.yaml")
 
         self.device = devices[device_id]
-        self.app_config = apps[app_id]
+        self.app_config = merge_device_app_override(apps[app_id], configs, device_id, app_id)
         self.scenario = self._resolve_scenario(configs, run_context, self.app_config)
 
     def launch_app(self, app_id: str) -> None:
@@ -105,13 +107,15 @@ class MobileAutomationClient:
 
         metadata = (run_context or {}).get("metadata", {})
         logger = MetadataEventLogger(metadata)
+        foreground_guard = self._build_foreground_guard()
         flow = FLOW_REGISTRY[flow_name](
             driver=self.driver,
             duration_sec=duration_sec,
             random_seed=scenario["random_seed"],
             logger=logger,
             scenario=scenario,
-            target_package=str(get_config_value(self.app_config, "appPackage", "package")),
+            target_package=self._automation_target_package(),
+            foreground_guard=foreground_guard,
         )
         flow.run()
         return {"status": "completed", "flow": flow_name, "events": metadata.get("events", [])}
@@ -125,11 +129,13 @@ class MobileAutomationClient:
 
         metadata = (run_context or {}).get("metadata", {})
         logger = MetadataEventLogger(metadata)
+        foreground_guard = self._build_foreground_guard()
         return prepare_playback(
             driver=self.driver,
             app_config=self.app_config,
             logger=logger,
-            target_package=str(get_config_value(self.app_config, "appPackage", "package")),
+            target_package=self._automation_target_package(),
+            foreground_guard=foreground_guard,
         )
 
     def stop_app(self, app_id: str) -> dict[str, Any] | None:
@@ -148,15 +154,31 @@ class MobileAutomationClient:
             raise ConfigError(f"Run app_id '{app_id}' does not match resolved app config.")
         app_package = str(get_config_value(self.app_config, "appPackage", "package"))
         current_package = self._current_package()
+        current_activity = self._current_activity()
+        container_package = self._container_package()
+        keep_container_alive = self._keep_container_alive()
+        container_proxy_foreground = self._is_container_proxy_foreground(current_package, current_activity)
         results: list[dict[str, Any]] = []
 
         if current_package and current_package != app_package:
-            results.append(self._stop_android_package(current_package, reason="foreground_external_app"))
+            if current_package == container_package and keep_container_alive and not container_proxy_foreground:
+                results.append({
+                    "package": current_package,
+                    "reason": "foreground_container_app",
+                    "skipped": True,
+                    "keep_alive": True,
+                })
+            else:
+                reason = "active_container_proxy_app" if container_proxy_foreground else "foreground_external_app"
+                results.append(self._stop_android_package(current_package, reason=reason))
         results.append(self._stop_android_package(app_package, reason="target_app"))
+        if container_package and container_package not in {app_package, current_package} and not keep_container_alive:
+            results.append(self._stop_android_package(container_package, reason="container_app"))
         self._press_home()
         return {
             "target_package": app_package,
             "foreground_package_before_stop": current_package,
+            "foreground_activity_before_stop": current_activity,
             "packages": results,
         }
 
@@ -187,6 +209,15 @@ class MobileAutomationClient:
         except Exception:
             return None
         return str(package) if package else None
+
+    def _current_activity(self) -> str | None:
+        if self.driver is None:
+            return None
+        try:
+            activity = self.driver.current_activity
+        except Exception:
+            return None
+        return str(activity) if activity else None
 
     def _press_home(self) -> None:
         if self.driver is None:
@@ -295,6 +326,85 @@ class MobileAutomationClient:
         if windows_default.exists():
             return str(windows_default)
         return None
+
+    def _container_package(self) -> str | None:
+        if self.app_config is None:
+            return None
+        if str(self.app_config.get("launchStrategy") or self.app_config.get("launch_strategy") or "").lower() != "container":
+            return None
+        container = self.app_config.get("container") or {}
+        if not isinstance(container, dict):
+            return None
+        package = str(container.get("packageName") or container.get("package") or "").strip()
+        return package or None
+
+    def _automation_target_package(self) -> str:
+        container_package = self._container_package()
+        if container_package:
+            return container_package
+        return str(get_config_value(self.app_config or {}, "appPackage", "package"))
+
+    def _build_foreground_guard(self) -> Callable[[], bool]:
+        if self._container_package():
+            return self._ensure_container_target_foreground
+        return self._ensure_target_package_foreground
+
+    def _ensure_target_package_foreground(self) -> bool:
+        if self.driver is None or self.app_config is None:
+            return False
+        target_package = str(get_config_value(self.app_config, "appPackage", "package"))
+        if self._current_package() == target_package:
+            return True
+        try:
+            self.driver.activate_app(target_package)
+            sleep(0.8)
+        except Exception:
+            return False
+        return False
+
+    def _ensure_container_target_foreground(self) -> bool:
+        if self.driver is None or self.app_config is None or self.device is None:
+            return False
+        current_package = self._current_package()
+        current_activity = self._current_activity()
+        target_package = str(get_config_value(self.app_config, "appPackage", "package"))
+        if current_package == target_package:
+            return True
+        if self._is_container_proxy_foreground(current_package, current_activity):
+            return True
+
+        try:
+            activate_android_app(self.driver, self.app_config, self.device)
+        except Exception:
+            return False
+        return False
+
+    def _keep_container_alive(self) -> bool:
+        if self.app_config is None:
+            return False
+        container = self.app_config.get("container") or {}
+        if not isinstance(container, dict):
+            return False
+        return bool(
+            container.get("keepAlive")
+            or container.get("keep_alive")
+            or container.get("keepContainerAlive")
+            or container.get("keep_container_alive")
+        )
+
+    def _is_container_proxy_foreground(self, current_package: str | None, current_activity: str | None) -> bool:
+        container_package = self._container_package()
+        if not container_package or current_package != container_package or not current_activity:
+            return False
+        if "com.vlite.sdk.proxy" in current_activity:
+            return True
+        page_markers = (
+            "com.easy.abroad.activities.MainActivity",
+            "com.easy.abroad.activities.SecondPageActivity",
+            ".activities.MainActivity",
+            ".activities.SecondPageActivity",
+        )
+        return "easy.abroad.activities" not in current_activity and current_activity not in page_markers
 
     def _resolve_scenario(
         self,

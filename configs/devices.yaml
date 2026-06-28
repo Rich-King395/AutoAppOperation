@@ -20,6 +20,13 @@ devices:
     udid: 9B081FFAZ00EDY
     adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
     appiumServerUrl: http://127.0.0.1:4723
+  - name: honor_v30_pro
+    platformName: Android
+    automationName: UiAutomator2
+    deviceName: honor_v30_pro
+    udid: PKT0220107003269
+    adbPath: 'D:\Android\Sdk\platform-tools\adb.exe'
+    appiumServerUrl: http://127.0.0.1:4723
   - name: ios_iphone_01
     platformName: iOS
     automationName: XCUITest

@@ -11,7 +11,7 @@ class GenericRandomWalk(Flow):
             choices.append(("back", 0.12))
         action = self.randomizer.weighted_choice(choices)
         if action == "back":
-            guarded_back(self.driver, self.target_package)
+            guarded_back(self.driver, self.target_package, foreground_guard=self.foreground_guard)
             self.wait_random(0.8, 2.0)
         elif action == "swipe_down":
             swipe_down_jittered(self.driver, self.randomizer)

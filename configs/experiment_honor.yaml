@@ -1,0 +1,55 @@
+experiment_id: Office
+device_id: honor_v30_pro
+hardware_id: arduino_vcap_com3
+environment_id: Office
+router_id: Xiaomi
+apps:
+  # - youtube_android
+  # - twitch_android
+  # - vimeo_android
+  # - ted_android
+
+  # - youtube_music_android
+  # - spotify_android
+  # - joox_android
+  # - apple_music_android
+  # - anghami_android
+  # - qq_music_android
+  # - netease_music_android
+  # - kugou_music_android
+
+  # - reddit_android
+  # - twitter_android
+  # - pinterest_android
+  # - instagram_android
+
+  # - facebook_android
+  # - threads_android
+  # - bluesky_android
+  - bbc_news_android
+  - cnn_android
+  - google_news_android
+  - wikipedia_android
+  - dailyhunt_android
+  - ebay_android
+  - amazon_shopping_android
+  - aliexpress_android
+  - temu_android
+  - lazada_android
+  - zalora_android
+  - tiktok_android
+  - huya_android
+  # - taobao_android
+  # - shein_android
+  # - rednote_android
+  # - scmp_android
+
+app_warmup_sec: 60
+duration_sec: 1200
+repetitions: 1
+output_root: data/raw/Office
+rf_collector:
+  base_url: http://127.0.0.1:8000
+  smooth: true
+  show_raw: true
+  smooth_window: 11
